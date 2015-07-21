@@ -1,3 +1,1 @@
-# landmais.ch
-
-Hello
+# landmais-hugo

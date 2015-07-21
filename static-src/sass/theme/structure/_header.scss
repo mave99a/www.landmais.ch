@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+#header {
+  position: relative;
+  z-index: $zindex-minimum;
+
+  $nav-collapsed-breakpoint: $screen-sm;
+  $nav-default: ".navbar-default.navbar-collapsed-sm";
+  @import "navigation";
+  $nav-collapsed-breakpoint: $screen-md;
+  $nav-default: ".navbar-default.navbar-collapsed-md";
+  @import "navigation";
+}
+
+.lt-ie9 #header .navbar-right { margin-right: -30px; }

@@ -1,0 +1,218 @@
+// The main color.
+$contrast: #8dc153; 
+
+@import "compass";
+
+@import "theme/variables";
+@import "theme/mixins";
+@import "theme/utilities";
+@import "font-awesome/font-awesome";
+
+@import "plugins/plugins";
+
+@import "theme/common"; 
+@import "theme/structure/structure";
+
+
+/*------------------------------------*\
+    $MODULES
+\*------------------------------------*/
+@import "theme/modules/quotes";
+// @import "theme/modules/pricing_tables";
+@import "theme/modules/panels/panels";
+@import "theme/modules/boxes/boxes";
+// @import "theme/modules/carousels/carousels";
+// @import "theme/modules/timeline";
+@import "theme/modules/statistics";
+// @import "theme/modules/comments";
+// @import "theme/modules/browser_window";
+@import "theme/modules/buttons";
+// @import "theme/modules/progress_bars";
+@import "theme/modules/links";
+// @import "theme/modules/accordions";
+@import "theme/modules/tabs";
+// @import "theme/modules/inputs";
+@import "theme/modules/pagination";
+@import "theme/modules/navs";
+@import "theme/modules/tables";
+@import "theme/modules/icons";
+// @import "theme/modules/client_slideshow";
+
+
+/*------------------------------------*\
+    $PAGES
+\*------------------------------------*/
+@import "theme/pages/contact";
+@import "theme/pages/error";
+// @import "theme/pages/countdown";
+// @import "theme/pages/faq";
+
+
+/*------------------------------------*\
+  Custom Styles
+\*------------------------------------*/
+
+.header-logo {
+  max-height: 40px;
+  max-width: 100%;
+  padding-right: 5px;
+  height: auto;
+}
+
+
+/*------------------------------------*\
+  Overwriting Jednotka Styles
+\*------------------------------------*/
+body {
+  // Remove because it creates strange background flickering effect in Chrome.
+  // For some animations this might need to be set to hidden again.
+  -webkit-backface-visibility: initial;
+}
+
+/*------------------------------------*\
+  Nivo Lightbox Styles
+\*------------------------------------*/
+.nivo-lightbox-theme-default .nivo-lightbox-image img {
+  padding: 10px; 
+}
+
+$lightbox-icon-size: 30px;
+
+a[data-lightbox] {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  bottom: 0;
+  @include transition(bottom $transition-duration-base);
+
+  &:before {
+    content: '';
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    @include square(100%);
+    @include transition(background-color $transition-duration-base);
+  }
+
+  [class^="fa-"], [class*=" fa-"] {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    font-size: $lightbox-icon-size;
+    margin-left: -($lightbox-icon-size)/2;
+    margin-top: -($lightbox-icon-size)/2;
+    color: white;
+    @include transition(top $transition-duration-base);
+    @include text-shadow(1px 1px 1px $black);
+    @include square($portfolio-icon-size);
+  }
+  
+  &:hover {
+    &:before {
+      @include rgba-fallback(rgba($dark, .30), "background-color");
+    }
+
+    [class^="fa-"], [class*=" fa-"] {
+      top: 50%;
+    }
+  }
+}
+
+
+
+/*------------------------------------*\
+  Overwriting Bootstrap Styles
+\*------------------------------------*/
+.breadcrumb>li+li:before {
+  // Overwrite breadcrumb slash because mixture rewrites it to "../".
+  content: "\002F\00a0";
+}
+
+
+/*------------------------------------*\
+  Custom Styles
+\*------------------------------------*/
+.sorten-boxes {
+  .sorten-box {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+    @include xs-only {
+      width: 100%;
+    }
+    
+    a {
+      padding: 40px;
+      text-decoration: none;
+      display: block;
+      @include transition(color $transition-duration-base);
+
+      &.image-link, .image-link {
+        overflow: hidden;
+        display: block;
+        position: relative;
+        bottom: 0;
+      }
+      
+      
+      &:hover {
+        @include box-shadow(rgba(153, 153, 153, 0.2) 0px 3px 8px 3px);
+        
+        .description {
+          display: none;
+        }
+        
+        .show-details {
+          display: block; 
+          color: $portfolio-color-active;
+        }
+      }
+    }
+
+    .title {
+      margin-top: 15px;
+      margin-bottom: 5px;
+      color: $portfolio-color;
+      @include ellipsis;
+      @include transition(color $transition-duration-base);
+    }
+
+    .description, .show-details {
+      color: $portfolio-category-color;
+      margin: 0;
+      font-size: 14px;
+      @include ellipsis;
+      @include transition(color $transition-duration-base);
+    }
+    
+    .show-details {
+      display: none; 
+    }
+  }
+}
+
+#sorten-filter {
+  text-align: center;
+  margin-bottom: 50px;
+
+  ul.nav-pills {
+    display: inline-block;
+
+    li {
+      display: inline;
+
+      a {
+        padding: 5px 20px;
+        float: left;
+      }
+    }
+  }
+}
+
+.container-md {
+  max-width: $container-md;
+}
