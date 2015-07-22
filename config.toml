@@ -1,7 +1,8 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://www.landmais.ch/"
 languageCode = "de"
-title = "landmais.ch"
+title = "Landmais.ch"
 
 [params]
   author = "Philipp Meyer"
   description = "mais, landmais, hybridmais, hybrid, polenta, landwirtschaft, bio"
+  analyticsId = "UA-57889358-1"

@@ -5,42 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="robots" content="all" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/style.css" type="text/css" media="all"/>
-
-  <meta name="description" content="aaa">
+  
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <meta name="description" content="{{ .Description }}">
   <meta name="author" content="{{ .Site.Params.author }}" >
 
   <!-- Twitter Card data -->
   <meta name="twitter:card" value="summary">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="{{ .Site.Title }}" />
+  <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="{{ .Site.Description }}" />
-  <meta property="og:url" content="{% include "util/domain-and-url" %}" />
-  {%- if head_image -%}
-  <meta property="og:image" content="" />
-  {% endif %}
-  {% include "analytics-js" %}
+  <meta property="og:description" content="{{ .Description }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="{{ .Params.image }}" />
+  {{ partial "analytics-js.html" . }}
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/poole.css">
-  <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/syntax.css">
-  <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/hyde.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="{{ .Site.BaseUrl }}css/style.css" type="text/css" media="all"/>
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
 
   <!-- RSS -->
   <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
