@@ -1,3 +1,7 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "de"
+title = "landmais.ch"
+
+[params]
+  author = "Philipp Meyer"
+  description = "mais, landmais, hybridmais, hybrid, polenta, landwirtschaft, bio"
