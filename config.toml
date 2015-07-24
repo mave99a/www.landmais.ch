@@ -6,3 +6,10 @@ title = "Landmais.ch"
   author = "Philipp Meyer"
   description = "mais, landmais, hybridmais, hybrid, polenta, landwirtschaft, bio"
   analyticsId = "UA-57889358-1"
+
+
+[[menu.main]]
+  name = "Home"
+  weight = 0
+  identifier = "about"
+  url = "/"

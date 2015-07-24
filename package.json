@@ -11,7 +11,7 @@
   "scripts": {
     "css:build": "scss-cli --source-map --output-style compressed \"./static-src/sass/**/*.{scss,sass}\" --glob -o ./static/css",
     "css:watch": "onchange static-src/sass -- npm run css:build",
-    "js:build": "browserify static-src/js/main.js -o static/js/bundle.js -d -p [minifyify --no-map]",
+    "js:build": "browserify static-src/js/main.js -o static/js/bundle.js -d",
     "js:watch": "watchify static-src/js/main.js -o static/js/bundle.js",
     "build": "npm run css:build && npm run js:build",
     "prewatch": "npm run build",

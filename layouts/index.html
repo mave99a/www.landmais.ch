@@ -1,6 +1,81 @@
-  {{ $title := "test" }}
-  {{ partial "head.html" . }}
-  <body>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    {{ partial "meta.html" . }}
 
+    <title>{{ .Site.Title }}</title>
+
+    {{ partial "head_includes.html" . }}
+    {{ partial "analytics_js.html" . }}
+  </head>
+  <body>
+    <div id="wrapper">
+      
+      {{ partial "header.html" . }}
+      
+      <div id="main" role="main">
+        <div id="main-content-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="title">
+                  Landmais
+                </h1>
+                <ol class="breadcrumb">
+                  <li>
+                    <a href="/">
+                      <i class="fa fa-home"></i>
+                    </a>
+                  </li>
+                  <li class="active">
+                    Home
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="lead lead-sm text-center"><em>Landmais.ch</em> hat zum Ziel, die Vielfalt alter und unbekannter Landmaissorten einem breiten Publikum bekannt zu machen. Ein interessierter Landwirt soll Ideen für neue Nischenprodukte erhalten. Den Nahrungsmittelkonsumenten soll die <strong>Vielfalt von Maisprodukten</strong> und deren mögliche Verwendung in der Küche vorgestellt werden.</p>
+                <p class="lead lead-sm text-center"><em>Landmais.ch</em> will sich primär der <strong>Erhaltung und Weiterentwicklung</strong> dieser Sorten widmen. Wir wollen mithelfen, dass solche Sorten in Zukunft wieder vermehrt angebaut und als attraktive Produkte den Konsumenten zur Verfügung gestellt werden.</p>
+              </div>
+            </div>
+
+            <div class="row sorten-boxes">
+              <div class="col-sm-6 sorten-box sorten-item">
+                <a href="/maissorten/">
+                  <div class="image-link">
+                    <img class="img-responsive img-rounded center-block" alt="Maissorten" src="/images/landmaissorten.jpg">
+                  </div>
+                  <h3 class="title">Maissorten</h3>
+                  <p class="description">Details zu den Landmaissorten</p>
+                  <p class="show-details"><i class="fa fa-plus"></i> Maissorten anzeigen</p>
+                </a>
+              </div>
+              <div class="col-sm-6 sorten-box sorten-item">
+                <a href="/produkte/">
+                  <div class="image-link">
+                    <img class="img-responsive img-rounded center-block" alt="Produkte" src="/images/griess-orange.jpg">
+                  </div>
+                  <h3 class="title">Produkte</h3>
+                  <p class="description">Produkte und Produktideen</p>
+                  <p class="show-details"><i class="fa fa-plus"></i> Produkte anzeigen</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade" id="scroll-to-top">
+          <i class="fa fa-chevron-up"></i>
+        </div>
+      </div>
+
+
+      {{ partial "footer.html" . }}
+    </div>
+    {{ partial "body_includes" . }}
   </body>
 </html>

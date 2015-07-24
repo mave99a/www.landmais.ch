@@ -1,13 +1,10 @@
 /* Libraries for bundling with Browserify */
 require('./jquery/jquery.js');
-require('./jquery/jquery.mobile.custom.min.js');
 require('./bootstrap/bootstrap.js');
 require('./plugins/modernizr/modernizr.custom.js');
 require('./plugins/hover_dropdown/twitter-bootstrap-hover-dropdown.js');
-require('./plugins/knob/jquery.knob.js');
 require('./plugins/isotope/jquery.isotope.js');
 require('./plugins/isotope/jquery.isotope.sloppy-masonry.js');
-require('./plugins/validate/jquery.validate.js');
 require('./plugins/nivo_lightbox/nivo-lightbox.js');
 
 /*
