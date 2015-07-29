@@ -1,14 +1,20 @@
-{{ partial "meta.html" . }}
-<body>
+<!DOCTYPE html>
+<html lang="de">
+  {{ partial "head.html" . }}
+  <body>
+    <div id="wrapper">
 
-  <div class="content container">
-    <ul class="posts">
-        {{ range .Data.Pages }}
-        <li>
-          <span><a href="{{ .Permalink }}">{{ .Title }}</a> <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>
-        </li>
-        {{ end }}
-    </ul>
-  </div>
-</body>
+      <div class="content container">
+        <ul class="posts">
+          {{ range .Data.Pages }}
+          <li>
+            <span><a href="{{ .Permalink }}">{{ .Title }}</a> <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ partial "footer.html" . }}
+    </div>
+    {{ partial "body_includes" . }}
+  </body>
 </html>

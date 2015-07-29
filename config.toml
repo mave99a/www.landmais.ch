@@ -1,4 +1,4 @@
-baseurl = "http://www.landmais.ch/"
+baseurl = "http://www.landmais.ch"
 languageCode = "de"
 title = "Landmais.ch"
 
@@ -7,6 +7,8 @@ title = "Landmais.ch"
   description = "mais, landmais, hybridmais, hybrid, polenta, landwirtschaft, bio"
   analyticsId = "UA-57889358-1"
 
+[taxonomies]
+  tag = "tags"
 
 [[menu.main]]
   name = "Home"

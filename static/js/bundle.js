@@ -14,8 +14,7 @@
 (function() {
   $(document).ready(function() {
     var $sidebar, contentTop, padding, paddingTop, scrollHeight, touch;
-    setValidateForm();
-    setIEHelperClassses();
+    
     /*
     * --------------------------------------------------------------------------------------------------------------------
     * bootstrap carousel definition
@@ -284,51 +283,6 @@
       }
     });
   });
-
-  /*
-  * --------------------------------------------------------------------------------------------------------------------
-  * form validation
-  * --------------------------------------------------------------------------------------------------------------------
-  */
-
-
-  this.setValidateForm = function(selector) {
-    if (selector == null) {
-      selector = $(".form-validation");
-    }
-    if (jQuery().validate) {
-      return selector.each(function(i, elem) {
-        return $(elem).validate({
-          errorElement: "span",
-          errorClass: "help-block has-error",
-          errorPlacement: function(err, e) {
-            return e.closest('.control-group').append(err);
-          },
-          highlight: function(e) {
-            return $(e).closest('.control-group').addClass('has-error');
-          },
-          unhighlight: function(e) {
-            return $(e).closest('.control-group').removeClass('has-error');
-          }
-        });
-      });
-    }
-  };
-
-  /*
-  * --------------------------------------------------------------------------------------------------------------------
-  * internet explorer helpers classes :last-child, :nth-child
-  * --------------------------------------------------------------------------------------------------------------------
-  */
-
-
-  this.setIEHelperClassses = function() {
-    if (/msie/.test(navigator.userAgent.toLowerCase())) {
-      $('*:last-child').addClass("last-child");
-      $('*:nth-child(odd)').addClass("nth-child-odd");
-      return $('*:nth-child(even)').addClass("nth-child-even");
-    }
-  };
 
 }).call(this);
 (function() {
