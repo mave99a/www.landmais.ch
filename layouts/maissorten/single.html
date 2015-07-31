@@ -46,47 +46,38 @@
         <div id="main-content">
           <div class="container">
 
+            <!-- Intro -->
             <div class="text-boxes">
               <div class="row text-box">
                 <div class="col-sm-6 col-sm-push-6">
-                  <a data-lightbox data-lightbox-gallery="main-images" href="{{ .Permalink }}{{ .Params.main_content.image_large }}" title="{{ .Params.main_content.image_title }}">
-                    <img class="img-responsive center-block" width="400" alt="{{ .Params.main_content.image_title }}" src="{{ .Permalink }}{{ .Params.main_content.image }}">
+                  <!-- First intro image -->
+                  <a data-lightbox data-lightbox-gallery="main-images" href="{{ .Permalink }}{{ (index .Params.intro.gallery 0).url_large }}" title="{{ (index .Params.intro.gallery 0).caption }}">
+                    <img class="img-responsive center-block" width="400" alt="{{ (index .Params.intro.gallery 0).caption }}" src="{{ .Permalink }}{{ (index .Params.intro.gallery 0).url }}">
                     <i class="fa fa-search"></i>
                   </a>
 
-                  <div class="row mg-t-lg text-center">
-                    <div class="col-xs-4">
-                      <a data-lightbox data-lightbox-gallery="main-images" href="/assets/maissorten/baspinar/baspinar-dunkelrot-large.jpg" title="Baspinar Dunkelrot">
-                        <img class="img-responsive center-block" alt="Baspinar Dunkelrot" src="/assets/maissorten/baspinar/baspinar-dunkelrot-small.jpg">
-                        <i class="fa fa-search"></i>
-                      </a>
-                    </div>
-                    <div class="col-xs-4">
-                      <a data-lightbox data-lightbox-gallery="main-images" href="/assets/maissorten/baspinar/baspinar-hellrot-large.jpg" title="Baspinar Hellrot">
-                        <img class="img-responsive center-block" alt="Baspinar Hellrot" src="/assets/maissorten/baspinar/baspinar-hellrot-small.jpg">
-                        <i class="fa fa-search"></i>
-                      </a>
-                    </div>
-                    <div class="col-xs-4">
-                      <a data-lightbox data-lightbox-gallery="main-images" href="/assets/maissorten/baspinar/baspinar-gelb-large.jpg" title="Baspinar Gelb">
-                        <img class="img-responsive center-block" alt="Baspinar Gelb" src="/assets/maissorten/baspinar/baspinar-gelb-small.jpg">
-                        <i class="fa fa-search"></i>
-                      </a>
-                    </div>
-                    <div class="col-xs-4">
-                      <a data-lightbox data-lightbox-gallery="main-images" href="/assets/maissorten/baspinar/baspinar-braun-large.jpg" title="Baspinar Braun">
-                        <img class="img-responsive center-block" alt="Baspinar Braun" src="/assets/maissorten/baspinar/baspinar-braun-small.jpg">
-                        <i class="fa fa-search"></i>
-                      </a>
-                    </div>
+                  <!-- Additional intro images (optional) -->
+                  <div class="row text-center">
+                    {{ range $index, $element := .Params.intro.gallery }}
+                      {{/* ignore first item */}}
+                      {{ if ne $index 0 }}
+                      <div class="col-xs-4 mg-t-lg">
+                        <a data-lightbox data-lightbox-gallery="main-images" href="{{ .Permalink }}{{ $element.url_large }}" title="{{ $element.caption }}">
+                          <img class="img-responsive center-block" alt="{{ $element.caption }}" src="{{ .Permalink }}{{ $element.url_small }}">
+                          <i class="fa fa-search"></i>
+                        </a>
+                      </div>
+                      {{ end }}
+                    {{ end }}
                   </div>
                 </div>
                 <div class="col-sm-6 col-sm-pull-6 mg-t-xso-lg">
-                  {{ .Params.main_content.text | markdownify }}
+                  {{ .Params.intro.text | markdownify }}
                 </div>
               </div>
             </div>
 
+            <!-- Herkunft -->
             <div class="row">
               <div class="col-sm-12">
                 <div class="page-header page-header-with-icon">
@@ -99,20 +90,20 @@
                 <div class="text-boxes">
                   <div class="row">
                     <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="/assets/maissorten/baspinar/baspinar-dunkelrot-makro-large.jpg" title="Dunkelrot Körner Makro">
-                        <img class="img-responsive center-block" alt="Dunkelrot Körner Makro" src="/assets/maissorten/baspinar/baspinar-dunkelrot-makro.jpg">
+                      <a data-lightbox href="{{ .Permalink }}{{ .Params.herkunft.image.url_large }}" title="{{ .Params.herkunft.image.caption }}">
+                        <img class="img-responsive center-block" alt="{{ .Params.herkunft.image.caption }}" src="{{ .Permalink }}{{ .Params.herkunft.image.url }}">
                         <i class="fa fa-search"></i>
                       </a>
                     </div>
                     <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
-                      <p>Dieser Hartmais wurde von <em>Anhalonium</em> im 2013 bezogen.</p>
-                      <p>Über den Ursprung konnte nur herausgefunden werden, dass die Sorte aus ursprünglich aus der Türkei stammt und in einem deutschen Immigrantengarten von einer Frau Baspinar angebaut wurde. Von dort kam das Saatgut zu Anhalonium.</p>
+                      {{ .Params.herkunft.text | markdownify }}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Anbau -->
             <div class="row">
               <div class="col-sm-12">
                 <div class="page-header page-header-with-icon">
@@ -125,22 +116,20 @@
                 <div class="text-boxes">
                   <div class="row">
                     <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="/assets/maissorten/baspinar/anbau-parzellenbeispiel.png">
-                        <img class="img-responsive center-block" alt="Anbau" src="/assets/maissorten/baspinar/anbau-parzellenbeispiel.png">
+                      <a data-lightbox href="{{ .Permalink }}{{ .Params.anbau.image.url_large }}" title="{{ .Params.anbau.image.caption }}">
+                        <img class="img-responsive center-block" alt="{{ .Params.anbau.image.caption }}" src="{{ .Permalink }}{{ .Params.anbau.image.url }}">
                         <i class="fa fa-search"></i>
                       </a>
                     </div>
                     <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
-                      <p>Baspinar wird von <em>Landmais.ch</em> seit 2013 angebaut. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.</p>
-                      <p>In der Landwirtschaft wird mit einem Reihenabstand von 75cm und einem Pflanzabstand von ca. 12-14cm gesät. Alternativ kann der Reihenabstand auch 50cm und der Pflanzenabstand 18-20cm betragen.</p>
-                      <p>Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis. Hier müssen die Pflanzabstände grösser gewählt und die Bohnen erst ein paar Wochen nach dem Mais gepflanzt werden, damit die Maispflanzen nicht überwuchert werden. Zudem sollten pro Pflanze nicht zu viele Bohnen gesät werden (ca. 3).</p>
+                      {{ .Params.anbau.text | markdownify }}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-
+            <!-- Geschichte -->
             <div class="row">
               <div class="col-sm-12">
                 <div class="page-header page-header-with-icon">
@@ -151,16 +140,12 @@
                 </div>
 
                 <div class="text-boxes">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <p>Über die genaue Herkunft und Geschichte der Sorte <em>Baspinar</em> ist <em>Landmais.ch</em> nichts bekannt.</p>
-                    </div>
-                  </div>
+                  {{ .Params.geschichte.content | markdownify }}
                 </div>
               </div>
             </div>
 
-
+            <!-- Verwendung -->
             <div class="row">
               <div class="col-sm-12">
                 <div class="page-header page-header-with-icon">
@@ -173,34 +158,31 @@
                 <div class="text-boxes">
                   <div class="row">
                     <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="/assets/maissorten/baspinar/baspinar-koernerquerschnitt.jpg" title="Baspinar Körnerquerschnitt">
-                        <img class="img-responsive center-block" alt="Baspinar Körnerquerschnitt" src="/assets/maissorten/baspinar/baspinar-koernerquerschnitt.jpg">
+                      <a data-lightbox href="{{ .Permalink }}{{ .Params.verwendung.image.url_large }}" title="{{ .Params.verwendung.image.caption }}">
+                        <img class="img-responsive center-block" alt="{{ .Params.verwendung.image.caption }}" src="{{ .Permalink }}{{ .Params.verwendung.image.url }}">
                         <i class="fa fa-search"></i>
                       </a>
                     </div>
                     <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
-                      <p>Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie nur noch maximal 14% Wasser enthalten (86% TS). Die Körner können grob gemahlen zu Bramatagries verarbeitet werden. Dabei entsteht ein rötliches Polentagries.</p>
-                      <p>Ist für einmal zu viel Griess vorhanden, dann eignet sich dessen Griess eingeweicht auch als Zugabe für ein schmackhaftes Brot. Der Maisanteil sollte dabei nicht höher als ein Drittel sein, damit das Brot noch schön aufgeht.</p>
-                      <p>Diese Sorte eignet sich ebenfalls bestens zum Herstellen von Popcorn.</p>
+                      {{ .Params.verwendung.text | markdownify }}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
+            <!-- Quellen -->
+            {{ if isset .Params "quellen" }}
             <hr>
 
-            <div class="row">
-              <div class="col-sm-8">
+            <h4>Quellen</h4>
 
-                <h4>Quellen</h4>
-
-                <ul class="list-unstyled small">
-                  <li><strong>Meyer</strong> P, 2013, Landmais-Erhaltenszüchtung – Beobachtung und Auswahl von geeigneten Landmais-sorten für einen Ertragsvergleich mit Hybridmais. HAFL, Zollikofen, 40 S.</li>
-                </ul>
-              </div>
-            </div>
-
+            <ul class="list-unstyled small">
+              {{ range .Params.quellen }}
+              <li>{{ .text | markdownify }}</li>
+              {{ end }}
+            </ul>
+            {{ end }}
 
           </div>
         </div>
