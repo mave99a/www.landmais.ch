@@ -34,7 +34,8 @@
 
             <div class="row">
               <div class="col-sm-12">
-                <p class="lead text-center"><em>Für Details auf die entsprechende Maissorte klicken.</em></p>
+                <div class="lead text-center">{{ .Params.intro.lead | markdownify }}</div>
+                <p class="text-center">{{ .Params.intro.text | markdownify }}</p>
               </div>
             </div>
 

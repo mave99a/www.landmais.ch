@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    {{ partial "meta.html" . }}
+
+    <title>{{ .Title }}</title>
+
+    {{ partial "head_includes.html" . }}
+    {{ partial "analytics_js.html" . }}
+  </head>
+  <body>
+    <div id="wrapper">
+      
+      {{ partial "header.html" . }}
+      
+      <div id="main" role="main">
+        <div id="main-content-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="title">
+                  Landmais
+                </h1>
+                <ol class="breadcrumb">
+                  <li>
+                    <a href="/">
+                      <i class="fa fa-home"></i>
+                    </a>
+                  </li>
+                  <li class="active">
+                    Home
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="lead lead-sm text-center">
+                  {{ .Params.intro.lead | markdownify }}
+                </div>
+              </div>
+            </div>
+
+            <div class="row sorten-boxes">
+              <div class="col-sm-6 sorten-box sorten-item">
+                <a href="/maissorten/">
+                  <div class="image-link">
+                    <img class="img-responsive img-rounded center-block" alt="Maissorten" src="/images/landmaissorten.jpg">
+                  </div>
+                  <h3 class="title">Maissorten</h3>
+                  <p class="description">Details zu den Landmaissorten</p>
+                  <p class="show-details"><i class="fa fa-plus"></i> Maissorten anzeigen</p>
+                </a>
+              </div>
+              <div class="col-sm-6 sorten-box sorten-item">
+                <a href="/produkte/">
+                  <div class="image-link">
+                    <img class="img-responsive img-rounded center-block" alt="Produkte" src="/images/griess-orange.jpg">
+                  </div>
+                  <h3 class="title">Produkte</h3>
+                  <p class="description">Produkte und Produktideen</p>
+                  <p class="show-details"><i class="fa fa-plus"></i> Produkte anzeigen</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade" id="scroll-to-top">
+          <i class="fa fa-chevron-up"></i>
+        </div>
+      </div>
+
+
+      {{ partial "footer.html" . }}
+    </div>
+    {{ partial "body_includes" . }}
+  </body>
+</html>
