@@ -58,7 +58,7 @@
             </div>
 
             <div class="row sorten-boxes" id="sorten-container">
-              {{ range where .Site.Pages "Section" "maissorten" }}
+              {{ range where .Site.Pages "Type" "maissorten" }}
               <div class="col-sm-6 sorten-box{{ range .Params.tags }} sorten-filter-{{ . | urlize }}{{ end }} sorten-item">
                 <a href="{{ .Permalink }}">
                   <div class="image-link">

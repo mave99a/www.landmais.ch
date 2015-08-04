@@ -1,7 +1,10 @@
 +++
+type = "maissorten-index"
+layout = "maissorten"
 title = "Maissorten"
 description = "Maissorten von Landmais.ch"
-url = "/maissorten/"
+slug = "/"
+image = "landmaissorten.jpg"
 
 
 [menu.main]

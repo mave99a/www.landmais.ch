@@ -1,6 +1,7 @@
 +++
 title = "Landmais.ch"
 description = "Wir setzen uns ein für die Erhaltung und Weiterentwicklung von alten und unbekannten Landmaissorten. Ausserdem zeigen wir Möglichkeiten für Maisprodukte und deren Verwendung in der Küche."
+image = "landmaissorten.jpg"
 
 [intro]
   lead = '''
