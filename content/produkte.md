@@ -1,9 +1,7 @@
 +++
-type = "produkte-index"
 layout = "produkte"
 title = "Produkte"
 description = "Produkte von Landmais.ch"
-slug = "/"
 image = "griess-orange.jpg"
 
 

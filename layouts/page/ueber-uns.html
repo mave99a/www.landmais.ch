@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+  {{ partial "head.html" . }}
+  <body>
+    <div id="wrapper">
+
+      {{ partial "header.html" . }}
+
+      <div id="main" role="main">
+
+        <div id="main-content-header">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1 class="title">
+                  Über uns
+                </h1>
+                <ol class="breadcrumb">
+                  <li>
+                    <a href="/">
+                      <i class="fa fa-home"></i>
+                    </a>
+                  </li>
+                  <li class="active">
+                    Über uns
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="main-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <p class="lead">{{ .Params.intro.lead }}</p>
+                <div>
+                  {{ .Params.intro.text | markdownify }}
+                </div>
+               
+                <a class="mg-t-md" style="display: inline-block;" data-lightbox href="{{ .Params.intro.image.url_large }}" title="{{ .Params.intro.image.caption }}">
+                  <img class="img-responsive" alt="{{ .Params.intro.image.caption }}" src="{{ .Params.intro.image.url }}">
+                  <i class="fa fa-search"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="page-header page-header-with-icon">
+                <i class="fa fa-info-circle"></i>
+                <h2>
+                  Kontaktinfos
+                </h2>
+              </div>
+              <div class="row text-center">
+                <div class="col-sm-offset-2 col-sm-4">
+                  <div class="icon-wrap icon-circle contrast-bg icon-md">
+                    <i class="fa fa-map-marker text-white"></i>
+                  </div>
+                  <h3>Adresse</h3>
+                  <ul class="list-unstyled">
+                    <li>Philipp Meyer</li>
+                    <li>Belp, Switzerland</li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  <div class="icon-wrap icon-circle contrast-bg icon-md">
+                    <i class="fa fa-envelope-o text-white"></i>
+                  </div>
+                  <h3>E-Mail</h3>
+                  <ul class="list-unstyled">
+                    <li><a href="mailto:info@landmais.ch">info@landmais.ch</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade" id="scroll-to-top">
+          <i class="fa fa-chevron-up"></i>
+        </div>
+      </div>
+
+      {{ partial "footer.html" . }}
+    </div>
+    {{ partial "body_includes" . }}
+  </body>
+</html>
