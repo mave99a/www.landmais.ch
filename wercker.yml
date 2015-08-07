@@ -3,7 +3,6 @@ build:
   steps:
     - arjen/hugo-build@1.4.0:
         version: "0.14"
-        theme: hyde
         flags: --buildDrafts=true
 deploy:
   steps:
