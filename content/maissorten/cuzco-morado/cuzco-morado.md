@@ -1,7 +1,8 @@
 +++
+collections = [ "maissorten" ]
 title = "Cuzco Morado"
 description = "Eine südamerikanische Sorte aus den Anden"
-date = "2014-12-08"
+weight = 2
 slug = "/"
 tags = [ "Weichmais" ]
 image = "morado-2012.jpg"

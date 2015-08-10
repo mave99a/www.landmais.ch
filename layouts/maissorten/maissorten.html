@@ -46,6 +46,7 @@
                   <li class="active"><a data-filter="*" href="#">Alle</a></li>
 
                   {{ range $key, $taxonomy := .Site.Taxonomies.tags }}
+                    {{/* Find the friendly (non-urlized) tag name. */}}
                     {{ $page := index $taxonomy.Pages 0 }}
                     {{ range $friendly := $page.Params.tags }}
                       {{ if eq $key ($friendly | urlize) }}
@@ -58,7 +59,8 @@
             </div>
 
             <div class="row sorten-boxes" id="sorten-container">
-              {{ range where .Site.Pages "Section" "maissorten" }}
+              {{ $taxonomy := index .Site.Taxonomies.collections "maissorten" }}
+              {{ range $taxonomy.Pages.ByWeight }}
               <div class="col-sm-6 sorten-box{{ range .Params.tags }} sorten-filter-{{ . | urlize }}{{ end }} sorten-item">
                 <a href="{{ .Permalink }}">
                   <div class="image-link">

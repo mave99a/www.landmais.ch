@@ -2,6 +2,8 @@
 layout = "maissorten"
 title = "Maissorten"
 description = "Maissorten von Landmais.ch"
+weight = -1
+slug = "/"
 image = "landmaissorten.jpg"
 
 

@@ -1,7 +1,8 @@
 +++
+collections = [ "maissorten" ]
 title = "Baspinar"
 description = "Ertragreicher Popcornmais"
-date = "2014-12-03"
+weight = 7
 slug = "/"
 tags = [ "Popcornmais" ]
 image = "baspinar-rot.jpg"

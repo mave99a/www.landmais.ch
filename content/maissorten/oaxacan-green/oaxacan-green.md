@@ -1,7 +1,8 @@
 +++
+collections = [ "maissorten" ]
 title = "Oaxacan Green"
 description = "Wüchsig und ertragreich"
-date = "2014-12-09"
+weight = 1
 slug = "/"
 tags = [ "Zahnmais" ]
 image = "oaxacan-green-1.jpg"

@@ -8,4 +8,5 @@ title = "Landmais.ch"
   analyticsId = "UA-57889358-1"
 
 [taxonomies]
+  collection = "collections"
   tag = "tags"

@@ -1,7 +1,8 @@
 +++
+collections = [ "maissorten" ]
 title = "Bronce Beauty"
 description = "Alte Indianersorte aus den USA"
-date = "2014-12-04"
+weight = 6
 slug = "/"
 tags = [ "Hartmais" ]
 image = "bronce-beauty-1.jpg"

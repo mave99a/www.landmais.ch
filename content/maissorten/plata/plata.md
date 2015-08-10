@@ -1,7 +1,8 @@
 +++
+collections = [ "maissorten" ]
 title = "Plata"
 description = "Hartmaissorte aus Argentinien"
-date = "2014-12-05"
+weight = 5
 slug = "/"
 tags = [ "Hartmais" ]
 image = "plata-orange.jpg"

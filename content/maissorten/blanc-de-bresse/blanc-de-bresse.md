@@ -1,7 +1,8 @@
 +++
+collections = [ "maissorten" ]
 title = "Blanc de Bresse"
 description = "Traditionelle Sorte aus der Bresse (F)"
-date = "2014-12-01"
+weight = 9
 slug = "/"
 tags = [ "Hartmais" ]
 image = "blanc-de-bresse.jpg"

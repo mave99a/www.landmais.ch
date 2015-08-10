@@ -3,6 +3,7 @@ layout = "produkte"
 title = "Produkte"
 description = "Produkte von Landmais.ch"
 image = "griess-orange.jpg"
+slug = "/"
 
 
 [menu.main]

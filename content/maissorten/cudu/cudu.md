@@ -1,7 +1,8 @@
 +++
+collections = [ "maissorten" ]
 title = "Cudu"
 description = "Alte Weichmaissorte aus den USA"
-date = "2014-12-02"
+weight = 8
 slug = "/"
 tags = [ "Weichmais" ]
 image = "cudu.jpg"
