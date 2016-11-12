@@ -28,14 +28,14 @@
                 </ol>
                 <div class="directional">
                   {{ $taxonomy := index .Site.Taxonomies.collections "maissorten" }}
-                  
+
                   {{ with ($taxonomy.Pages.ByWeight.Prev .) }}
-                  <a class="has-tooltip left" data-placement="right" data-title="{{ .Title }}" href="{{ .Permalink }}">
+                  <a class="has-tooltip left" data-placement="right" data-title="{{ .Title }}" href="{{ .URL }}">
                     <i class="fa fa-chevron-left"></i>
                   </a>
                   {{ end }}
                   {{ with ($taxonomy.Pages.ByWeight.Next .) }}
-                    <a class="has-tooltip right" data-placement="left" data-title="{{ .Title }}" href="{{ .Permalink }}">
+                    <a class="has-tooltip right" data-placement="left" data-title="{{ .Title }}" href="{{ .URL }}">
                       <i class="fa fa-chevron-right"></i>
                     </a>
                   {{ end }}
@@ -53,8 +53,8 @@
               <div class="row text-box">
                 <div class="col-sm-6 col-sm-push-6">
                   <!-- First intro image -->
-                  <a data-lightbox data-lightbox-gallery="main-images" href="{{ .Permalink }}{{ (index .Params.intro.gallery 0).url_large }}" title="{{ (index .Params.intro.gallery 0).caption }}">
-                    <img class="img-responsive center-block" width="400" alt="{{ (index .Params.intro.gallery 0).caption }}" src="{{ .Permalink }}{{ (index .Params.intro.gallery 0).url }}">
+                  <a data-lightbox data-lightbox-gallery="main-images" href="{{ .URL }}{{ (index .Params.intro.gallery 0).url_large }}" title="{{ (index .Params.intro.gallery 0).caption }}">
+                    <img class="img-responsive center-block" width="400" alt="{{ (index .Params.intro.gallery 0).caption }}" src="{{ .URL }}{{ (index .Params.intro.gallery 0).url }}">
                     <i class="fa fa-search"></i>
                   </a>
 
@@ -64,8 +64,8 @@
                       {{/* ignore first item */}}
                       {{ if ne $index 0 }}
                       <div class="col-xs-4 mg-t-lg">
-                        <a data-lightbox data-lightbox-gallery="main-images" href="{{ .Permalink }}{{ $element.url_large }}" title="{{ $element.caption }}">
-                          <img class="img-responsive center-block" alt="{{ $element.caption }}" src="{{ .Permalink }}{{ $element.url_small }}">
+                        <a data-lightbox data-lightbox-gallery="main-images" href="{{ .URL }}{{ $element.url_large }}" title="{{ $element.caption }}">
+                          <img class="img-responsive center-block" alt="{{ $element.caption }}" src="{{ .URL }}{{ $element.url_small }}">
                           <i class="fa fa-search"></i>
                         </a>
                       </div>
@@ -92,8 +92,8 @@
                 <div class="text-boxes">
                   <div class="row">
                     <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="{{ .Permalink }}{{ .Params.herkunft.image.url_large }}" title="{{ .Params.herkunft.image.caption }}">
-                        <img class="img-responsive center-block" alt="{{ .Params.herkunft.image.caption }}" src="{{ .Permalink }}{{ .Params.herkunft.image.url }}">
+                      <a data-lightbox href="{{ .URL }}{{ .Params.herkunft.image.url_large }}" title="{{ .Params.herkunft.image.caption }}">
+                        <img class="img-responsive center-block" alt="{{ .Params.herkunft.image.caption }}" src="{{ .URL }}{{ .Params.herkunft.image.url }}">
                         <i class="fa fa-search"></i>
                       </a>
                     </div>
@@ -118,8 +118,8 @@
                 <div class="text-boxes">
                   <div class="row">
                     <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="{{ .Permalink }}{{ .Params.anbau.image.url_large }}" title="{{ .Params.anbau.image.caption }}">
-                        <img class="img-responsive center-block" alt="{{ .Params.anbau.image.caption }}" src="{{ .Permalink }}{{ .Params.anbau.image.url }}">
+                      <a data-lightbox href="{{ .URL }}{{ .Params.anbau.image.url_large }}" title="{{ .Params.anbau.image.caption }}">
+                        <img class="img-responsive center-block" alt="{{ .Params.anbau.image.caption }}" src="{{ .URL }}{{ .Params.anbau.image.url }}">
                         <i class="fa fa-search"></i>
                       </a>
                     </div>
@@ -160,8 +160,8 @@
                 <div class="text-boxes">
                   <div class="row">
                     <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="{{ .Permalink }}{{ .Params.verwendung.image.url_large }}" title="{{ .Params.verwendung.image.caption }}">
-                        <img class="img-responsive center-block" alt="{{ .Params.verwendung.image.caption }}" src="{{ .Permalink }}{{ .Params.verwendung.image.url }}">
+                      <a data-lightbox href="{{ .URL }}{{ .Params.verwendung.image.url_large }}" title="{{ .Params.verwendung.image.caption }}">
+                        <img class="img-responsive center-block" alt="{{ .Params.verwendung.image.caption }}" src="{{ .URL }}{{ .Params.verwendung.image.url }}">
                         <i class="fa fa-search"></i>
                       </a>
                     </div>
