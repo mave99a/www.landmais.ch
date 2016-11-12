@@ -19,4 +19,4 @@ Zwischen den Teilparzellen wurden verschiedene Kleearten angesät.
   url = "acker-belp.jpg"
   url_large = "acker-belp-large.jpg"
   caption = "Acker Belp"
- +++
++++

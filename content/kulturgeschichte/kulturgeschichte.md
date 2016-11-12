@@ -9,7 +9,7 @@ slug = "/"
 
 [intro]
   lead = "Wie der Mais im 16. Jahrhunder nach Europa gelangte und zu einem wichtigen Nahrungsmittel wurde."
-  
+
 [indios]
   text = '''
 Die Kultivierung von Mais reicht Tausende Jahre in die Vergangenheit zurück. Unbestritten wird er im mexikanischen Hochplateau seit 5000 Jahren angebaut (Gay 1984, 19). Erfassbar ist seine Geschichte jedoch mehr oder weniger erst, seit die Spanier die Neue Welt eroberten. Unbestritten ist heute auch, dass der Mais ein entscheidender Faktor für die Bildung und Entwicklung der Zivilisationen in Amerika war (Gay 1984, 30ff.).
@@ -22,7 +22,7 @@ Laut den Beobachtungen von Gonzalo (1535, 265) wuchsen Maisstängel so dick wie 
 
 Die Indios pflügten das Feld nicht und bekämpften nur zu Beginn der Vegetationsdauer schädliche Tiere wie Papageien, Katzen, Rehe und Wildschweine. Die Feldbestellung bestand aus abholzen und verbrennen, was bei Windstille geschah, damit die Asche nicht weggetragen wurde. Gesät haben die Indios an Neumond, nachdem das Saatgut 1-2 Tage befeuchtet worden war. Grund für die Vorkeimung ist laut Gonzalo (1535, 264) ein schnelleres Keimen und Aufwachsen der jungen Pflanzen. Das Maisfeld wurde danach solange weitgehend unkrautfrei gehalten, bis der Mais die Kräuter überragte. Danach liess man es bleiben (Gonzalo 1535, 264). Abbildung 2 zeigt die Maissaat mithilfe eines Scharrholzes. Die Vegetationsdauer betrug vier Monate. Einige Sorten waren bereits nach drei oder sogar zwei Monaten reif. Von einer Sorte aus Nicaragua weiss der Autor, dass sie nach 40 Tagen reifte, auch wenn diese wenig Ertrag lieferte (Gonzalo, 1535, 267).
 '''
-  
+
 [[indios.images]]
   url = "inkas.png"
   caption = '''
@@ -86,4 +86,4 @@ Laut Paredes López (2009) enthält Mais nur sehr wenig Tryptophan, womit für d
   text = '''
 **Röser** M, ohne Datum. Die Maispflanze ─ Kulturgeschichte und Entstehung. Institut für Botanik und Botanischen Garten der Universität Wien, abgerufen am 05.10.2013, http://www.landesmuseum.at/pdf_frei_remote/KATOOENF_0061_0181-0188.pdf
 '''
- +++
++++
