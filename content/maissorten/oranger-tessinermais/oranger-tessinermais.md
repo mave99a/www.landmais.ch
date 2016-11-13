@@ -6,6 +6,7 @@ weight = 4
 slug = "/"
 tags = [ "Hartmais" ]
 image = "oranger-tessinermais-1.jpg"
+draft = true
 
 [intro]
   text = '''
@@ -40,8 +41,8 @@ Dieser Hartmais wurde von *Anhalonium* im 2013 bezogen.
     url = "oranger-tessinermais-makro.jpg"
     url_large = "oranger-tessinermais-makro-large.jpg"
     caption = "Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Der Orange Tessinermais wird von *Landmais.ch* seit 2013 angebaut. Die Sorte wächst problemlos. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.
@@ -54,8 +55,8 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 Über die genaue Herkunft und Geschichte der Sorte Oranger Tessinermais ist *Landmais.ch* nichts bekannt.
@@ -72,7 +73,7 @@ Die Zapoteken verwendeten das grüne Mehl für die Herstellung von Tamales (Tort
     url = "oranger-tessinermais-koernerquerschnitt.jpg"
     url_large = "oranger-tessinermais-koernerquerschnitt.jpg"
     caption = "Oranger Tessinermais Körnerquerschnitt"
-    
+
 
 [[quellen]]
   text = '''

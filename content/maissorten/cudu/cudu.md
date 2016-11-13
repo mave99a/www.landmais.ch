@@ -6,6 +6,7 @@ weight = 8
 slug = "/"
 tags = [ "Weichmais" ]
 image = "cudu.jpg"
+draft = true
 
 [intro]
   text = '''
@@ -32,8 +33,8 @@ Dieser Weichmais wurde im 2013 von einer Genbank der ARS USDA in Iowa bezogen un
     url = "cudo-makro.jpg"
     url_large = "cudo-makro-large.jpg"
     caption = "Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Cudu wird von *Landmais.ch* seit 2014 angebaut. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.
@@ -46,8 +47,8 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Kürbissen. Hier müssen die P
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 Das Saatgut stammt von Indianern am oberen Missouri. Der Sortenname könnte identisch sein mit der Sorte *Navajo Cudei* oder *Sacred Corn*, die 1917 im Buch (Will, 1917) beschrieben wurden.
@@ -64,7 +65,7 @@ Dieses Mehl kann z.B. für Brot (ca. 30%-Anteil) oder Tortillas verwendet werden
     url = "cudu-koernerquerschnitt.jpg"
     url_large = "cudu-koernerquerschnitt-large.jpg"
     caption = "Cudu Körnerquerschnitt"
-    
+
 
 [[quellen]]
   text = '''
