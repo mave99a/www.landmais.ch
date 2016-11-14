@@ -1,177 +1,203 @@
 <!DOCTYPE html>
 <html lang="de">
-  {{ partial "head.html" . }}
-  <body>
-    <div id="wrapper">
+{{ partial "head.html" . }}
+<body>
+  <div id="wrapper">
 
-      {{ partial "header.html" . }}
+    {{ partial "header.html" . }}
 
-      <div id="main" role="main">
+    <div id="main" role="main">
 
-        <div id="main-content-header">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <h1 class="title">
+      <div id="main-content-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="title">
+                {{ .Title }}
+              </h1>
+              <ol class="breadcrumb">
+                <li>
+                  <a href="/">
+                    <i class="fa fa-home"></i>
+                  </a>
+                </li>
+                <li class="active">
                   {{ .Title }}
-                </h1>
-                <ol class="breadcrumb">
-                  <li>
-                    <a href="/">
-                      <i class="fa fa-home"></i>
-                    </a>
-                  </li>
-                  <li class="active">
-                    {{ .Title }}
-                  </li>
-                </ol>
-              </div>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
+      </div>
 
-        <div id="main-content">
-          <div class="container container-md">
-            <div class="row">
-              <div class="col-sm-12">
-                <p class="lead text-center">{{ .Params.intro.lead }}</p>
-              </div>
+      <div id="main-content">
+        <div class="container container-md">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="lead text-center">{{ .Params.intro.lead }}</p>
             </div>
+          </div>
 
-            <p>Bisher finanziert</p>
+          <p class="text-center">Bisher sind CHF 160 von CHF 2'400 finanziert</p>
 
-            <div class="progress progress-md">
-              <div class="progress-bar progress-bar-medium" role="progressbar" style="width: 3%">
-                0 %
-              </div>
+          <div class="progress progress-md">
+            <div class="progress-bar progress-bar-medium" role="progressbar" style="width: 7%">
+              7 %
             </div>
+          </div>
 
-            <p>
-              <strong>Ziel 1:</strong> 20 Personen, die je CHF 80 in dieses Projekt investieren (= CHF 1'600). Damit wird das Anpflanzen und damit der Erhalt der Sorte <em>Oaxacan Green</em> finanziert.
-            </p>
-
-            <p>
-              <strong>Ziel 2:</strong> Weitere 10 Personen, die je CHF 80 investieren. Damit wird der Erhalt von fünf weiteren Sorten finanziert.
-            </p>
-
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="page-header page-header-with-icon">
-                  <i class="fa fa-flash"></i>
-                  <h2>
-                    Das Projekt
-                  </h2>
+          <div class="row panels">
+            <div class="col-sm-6 panel-item">
+              <div class="panel panel-image">
+                <div class="panel-heading">
+                  <img class="img-responsive-sm" alt="Project planning" width="768" height="300" src="oaxacan-koerner.jpg"></div>
+                <div class="panel-body">
+                  <h3 class="panel-title">Ziel 1: Erwerbsmässiger Anbau einer grünen Sorte</h3>
+                  <p>20 Personen, die je 80 Franken in dieses landwirtschaftliche Projekt investieren (= Total CHF 1‘600). Damit wird der erwerbsmässige Anbau einer grünen Landmaissorte im 2017 finanziert.</p>
                 </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-sm-8">
-                {{ .Params.project.text | markdownify }}
-              </div>
-
-              <div class="col-sm-4">
-                {{ range .Params.project.images }}
-                <div class="thumbnail">
-                  <img src="{{ .url }}">
-                  <div class="caption">
-                    <p>{{ .caption | markdownify }}</p>
-                  </div>
-                </div>
-                {{ end }}
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="page-header page-header-with-icon">
-                  <i class="fa fa-flash"></i>
-                  <h2>
-                    Belohnungen
-                  </h2>
+            <div class="col-sm-6 panel-item">
+              <div class="panel panel-image">
+                <div class="panel-heading"><img class="img-responsive-sm" alt="Easy customizable" width="768" height="300" src="bijeli-koerner.jpg"></div>
+                <div class="panel-body">
+                  <h3 class="panel-title">Ziel 2: Erhalt einer weissen, violetten, orangen und grünen Sorte</h3>
+                  <p>Weitere 10 Personen, die je 80 Franken investieren. Damit werden die Materialkosten für den Erhalt einer weissen, violetten, orangen und grünen Landmaissorte finanziert.</p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="row">
-              <div class="col-sm-8">
-                {{ .Params.goodies.text | markdownify }}
-              </div>
-
-              <div class="col-sm-4">
-                {{ range .Params.goodies.images }}
-                <div class="thumbnail">
-                  <img src="{{ .url }}">
-                  <div class="caption">
-                    <p>{{ .caption | markdownify }}</p>
-                  </div>
-                </div>
-                {{ end }}
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="page-header page-header-with-icon">
+                <i class="fa fa-flash"></i>
+                <h2>
+                  Das Projekt
+                </h2>
               </div>
             </div>
+          </div>
 
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="page-header page-header-with-icon no-mg-t">
-                  <i class="fa fa-code-fork"></i>
-                  <h2>
-                    Mitmachen
-                  </h2>
+          <div class="row">
+            <div class="col-sm-8">
+              {{ .Params.project.text | markdownify }}
+            </div>
+
+            <div class="col-sm-4">
+              {{ range .Params.project.images }}
+              <div class="thumbnail">
+                <img src="{{ .url }}">
+                <div class="caption">
+                  <p>{{ .caption | markdownify }}</p>
                 </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <form class="form">
-                      <fieldset class="row">
-                        <div class="col-sm-4 mg-b-md">
-                          <div class="lead">Personal info</div>
-                          <small class="text-muted">Integer vulputate porta augue, sit amet interdum tellus commodo et. Sed volutpat neque vel turpis ultrices sini bibendum.</small>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="page-header page-header-with-icon">
+                <i class="fa fa-flash"></i>
+                <h2>
+                  Belohnungen
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-8">
+              {{ .Params.goodies.text | markdownify }}
+            </div>
+
+            <div class="col-sm-4">
+              {{ range .Params.goodies.images }}
+              <div class="thumbnail">
+                <img src="{{ .url }}">
+                <div class="caption">
+                  <p>{{ .caption | markdownify }}</p>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="page-header page-header-with-icon no-mg-t">
+                <i class="fa fa-code-fork"></i>
+                <h2>
+                  Mitmachen
+                </h2>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <form class="form">
+                    <fieldset class="row">
+                      <div class="col-sm-4 mg-b-md">
+                        <div class="lead">So funktioniert die Teilnahme</div>
+                        {{ .Params.participation.text | markdownify }}
+                      </div>
+                      <div class="col-sm-7 col-sm-offset-1">
+                        <div class="form-group">
+                          <label>Vorname</label>
+                          <input class="form-control" id="input-name" type="text">
                         </div>
-                        <div class="col-sm-7 col-sm-offset-1">
-                          <div class="form-group">
-                            <label>Full name</label>
-                            <input class="form-control" id="input-name" type="text">
-                          </div>
-                          <div class="form-group">
-                            <label>Street</label>
-                            <input class="form-control" id="input-street" placeholder="Street placeholder" type="text">
-                            <p class="help-block">
-                              <small class="text-muted">Description for street field</small>
-                            </p>
-                          </div>
-                          <div class="form-group">
-                            <label>City</label>
-                            <input class="form-control" id="input-city" placeholder="City placeholder" type="text">
-                          </div>
+                        <div class="form-group">
+                          <label>Name</label>
+                          <input class="form-control" id="input-name" type="text">
                         </div>
-                      </fieldset>
-                      <div class="form-actions mg-t-lg">
-                        <div class="row">
-                          <div class="col-sm-7 col-sm-offset-5">
-                            <div class="text-center-xs">
-                              <div class="btn btn-contrast btn-lg">
-                                <i class="fa fa-save"></i>
-                                Save
-                              </div>
+                        <div class="form-group">
+                          <label>Strasse</label>
+                          <input class="form-control" id="input-street" placeholder="" type="text">
+                          <!-- <p class="help-block">
+                            <small class="text-muted">Strasse, Nr., PLZ und Ort</small> -->
+                          </p>
+                        </div>
+                        <div class="form-group">
+                          <label>PLZ, Ort</label>
+                          <input class="form-control" id="input-city" placeholder="" type="text">
+                        </div>
+                        <div class="form-group">
+                          <label>E-Mail-Adresse</label>
+                          <input class="form-control" id="input-email" placeholder="" type="text">
+                        </div>
+                        <div class="form-group">
+                          <label>Bemerkungen</label>
+                          <input class="form-control" id="input-email" placeholder="" type="text">
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="form-actions mg-t-lg">
+                      <div class="row">
+                        <div class="col-sm-7 col-sm-offset-5">
+                          <div class="text-center-xs">
+                            <div class="btn btn-contrast btn-lg">
+                              <i class="fa fa-save"></i>
+                              Save
                             </div>
                           </div>
                         </div>
                       </div>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
-
           </div>
-        </div>
 
-        <div class="fade" id="scroll-to-top">
-          <i class="fa fa-chevron-up"></i>
         </div>
       </div>
 
-      {{ partial "footer.html" . }}
+      <div class="fade" id="scroll-to-top">
+        <i class="fa fa-chevron-up"></i>
+      </div>
     </div>
-    {{ partial "body_includes" . }}
-  </body>
+
+    {{ partial "footer.html" . }}
+  </div>
+  {{ partial "body_includes" . }}
+</body>
 </html>
