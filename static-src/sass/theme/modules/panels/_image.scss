@@ -60,7 +60,7 @@ $half-padded-size: floor($total-padded-size / 2);
     border: 2px solid $panel-border-color;
     padding-top: 5px;
     border-top: none;
-    text-align: center;
+  //  text-align: center;
     @include border-bottom-radius($panel-border-radius);
 
 

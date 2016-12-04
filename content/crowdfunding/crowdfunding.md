@@ -8,7 +8,7 @@ slug = "/"
 #  weight = 5
 
 [intro]
-  lead = "Hilf mit, im 2017 eine grüne Landmaissorte regional anzubauen und erhalte einen Anteil am Ertrag."
+  lead = "Hilf mit, im 2017 eine grüne Landmaissorte regional auf 20 Aren (2'000m<sup>2</sup>) anzubauen und erhalte einen Anteil am Ertrag."
 
 [project]
   text = '''
@@ -31,7 +31,9 @@ Wir werden für dich nach Ernte und Verarbeitung ein **Mais-Fest auf dem Belpber
 [participation]
   text = '''
 1. Formular ausfüllen.
-2. CHF 80 einzahlen. Zahlungsinformationen (erhältst du auch per Mail): PC-11-111111-1.
+2. CHF 80 einzahlen. Zahlungsinformationen (erhältst du auch per Mail):   
+**CH49 0630 0503 7050 7455 6**,   
+ltd. auf Verein Landmais in Belp, Valiant Bank.
 3. Während dem 2017 erhältst du aktuelle Informationen zum Projektstatus und wirst gegen Ende Jahr eingeladen zum Mais-Fest.
 '''
 
