@@ -16,7 +16,7 @@ Projektinitiator und Agronom Philipp Meyer baut seit 2011 Landmaissorten an und 
 
 Im 2017 soll nun zum ersten Mal eine grüne Landmaissorte angebaut werden, die wir bei erfolgreicher Ernte zu Brahmata-Maisgriess verarbeiten werden.
 
-Das BWL finanziert die Hälfte der Produktionskosten. Um die Durchführung zu ermöglichen, sind wir auf deine Unterstützung angewiesen.
+Das BLW finanziert die Hälfte der Produktionskosten. Um die Durchführung zu ermöglichen, sind wir auf deine Unterstützung angewiesen.
 
 Hilf mit, die Vielfalt von Maissorten zu erhalten.
 '''
@@ -36,6 +36,11 @@ Wir werden für dich nach Ernte und Verarbeitung ein **Mais-Fest auf dem Belpber
 ltd. auf Verein Landmais in Belp, Valiant Bank.
 3. Während dem 2017 erhältst du aktuelle Informationen zum Projektstatus und wirst gegen Ende Jahr eingeladen zum Mais-Fest.
 '''
+
+[[project.images]]
+  url = "griess-haufen-gruen.jpg"
+  caption = '''*Grünes Polentagriess*
+  '''
 
 [[goodies.images]]
   url = ""
