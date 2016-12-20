@@ -293,20 +293,20 @@
           var comments = $('#input-comments').val();
           if (!hasError) {
             var target = ('info' + '@' + 'landmais.ch');
-            // $.ajax({
-            //   url: "https://formspree.io/" + target,
-            //   method: "POST",
-            //   data: {
-            //     "Anzahl Pakete": quantity,
-            //     "Vorname": firstname,
-            //     "Nachname": lastname,
-            //     "Strasse": street,
-            //     "PLZ, Ort": city,
-            //     "E-Mail": email,
-            //     "Kommentare": comments
-            //   },
-            //   dataType: "json"
-            // });
+            $.ajax({
+              url: "https://formspree.io/" + target,
+              method: "POST",
+              data: {
+                "Anzahl Pakete": quantity,
+                "Vorname": firstname,
+                "Nachname": lastname,
+                "Strasse": street,
+                "PLZ, Ort": city,
+                "E-Mail": email,
+                "Kommentare": comments
+              },
+              dataType: "json"
+            });
 
             $('#crowdfunding-form').hide();
             $('#success-message').show();
