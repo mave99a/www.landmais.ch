@@ -5,7 +5,7 @@ description = "Über Landmais.ch"
 slug = "/"
 
 [menu.main]
-  weight = 6
+  weight = 5
 
 [intro]
   lead = "Anbau der Landmaissorten in Belp"

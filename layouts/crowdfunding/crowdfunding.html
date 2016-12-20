@@ -158,7 +158,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-12">
-                  <form class="form">
+                  <form class="form" id="crowdfunding-form">
                     <fieldset class="row">
                       <div class="col-sm-4 mg-b-md">
                         <div class="lead">So funktioniert die Teilnahme</div>
@@ -167,11 +167,11 @@
                       <div class="col-sm-7 col-sm-offset-1">
                         <div class="form-group">
                           <label>Vorname</label>
-                          <input class="form-control" id="input-name" type="text">
+                          <input class="form-control" id="input-firstname" type="text">
                         </div>
                         <div class="form-group">
                           <label>Name</label>
-                          <input class="form-control" id="input-name" type="text">
+                          <input class="form-control" id="input-lastname" type="text">
                         </div>
                         <div class="form-group">
                           <label>Strasse</label>
@@ -190,7 +190,7 @@
                         </div>
                         <div class="form-group">
                           <label>Bemerkungen</label>
-                          <input class="form-control" id="input-email" placeholder="" type="text">
+                          <input class="form-control" id="input-comments" placeholder="" type="text">
                         </div>
                       </div>
                     </fieldset>
@@ -198,15 +198,20 @@
                       <div class="row">
                         <div class="col-sm-7 col-sm-offset-5">
                           <div class="text-center-xs">
-                            <div class="btn btn-contrast btn-lg">
-                              <i class="fa fa-save"></i>
-                              Save
-                            </div>
+                            <button id="submit-button" type="submit" class="btn btn-contrast btn-lg">
+                              <i class="fa fa-paper-plane-o"></i>
+                              abschicken
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </form>
+                    <div id="success-message" class="text-xs-center" style="display:none">
+                    <img src="thumbs_up.svg" class="thumbs-up">
+                    <h1>Vielen Dank für deine Unterstützung</h1>
+                    <p>Du wirst in den nächsten Stunden von mir ein Mail erhalten zur Bestätigung.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -223,5 +228,37 @@
     {{ partial "footer.html" . }}
   </div>
   {{ partial "body_includes" . }}
+  <script>
+    $("#crowdfunding-form").submit(function(event) {
+      var firstname = $('#input-name').val();
+      var lastname = $('#input-lastname').val();
+      var street = $('#input-street').val();
+      var city = $('#input-city').val();
+      var email = $('#input-email').val();
+      var comments = $('#input-comments').val();
+      if (firstname.trim().length > 0 && lastname.trim().length > 0 && email.trim().length > 0) {
+        var target = ('info' + '@' + 'landmais.ch');
+        $.ajax({
+          url: "https://formspree.io/" + target,
+          method: "POST",
+          data: {
+            "Vorname": firstname,
+            "Nachname": lastname,
+            "Strasse": street,
+            "PLZ, Ort": city,
+            "E-Mail": email,
+            "Kommentare": comments
+          },
+          dataType: "json"
+        });
+
+        $('#crowdfunding-form').hide();
+        $('#success-message').show();
+      }
+
+
+      event.preventDefault();
+    });
+  </script>
 </body>
 </html>
