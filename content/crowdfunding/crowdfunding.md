@@ -4,8 +4,8 @@ title = "Crowdfunding"
 description = "Crowdfunding zum Erhalt von alten Landmaissorten."
 slug = "/"
 
-<!-- [menu.main]
-  weight = 6 -->
+# [menu.main]
+#  weight = 6
 
 [intro]
   lead = "Hilf mit, im 2017 eine grüne Landmaissorte regional auf 20 Aren (2'000m<sup>2</sup>) anzubauen und erhalte einen Anteil am Ertrag."
