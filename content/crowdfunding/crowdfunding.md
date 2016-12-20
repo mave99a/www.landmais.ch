@@ -28,22 +28,13 @@ Bist du gespannt auf ein Produkt, das farblich und geschmacklich ganz neue Seite
 Wir werden für dich nach Ernte und Verarbeitung ein **Mais-Fest auf dem Belpberg** organisieren und dir **1kg Brahmatagriess** abgeben. Falls die Ernte es zulässt, bekommst du die Möglichkeit, eine zusätzliche Menge an Brahmatagriess zu einem Vorzugspreis zu kaufen.
 '''
 
-[participation]
-  text = '''
-1. Formular ausfüllen.
-2. CHF 80 einzahlen. Zahlungsinformationen:   
-**CH49 0630 0503 7050 7455 6**,   
-ltd. auf Verein Landmais in Belp, Valiant Bank.
-3. Während dem 2017 erhältst du aktuelle Informationen zum Projektstatus und wirst gegen Ende Jahr eingeladen zum Mais-Fest.
-'''
-
 [[project.images]]
   url = "griess-haufen-gruen.jpg"
   caption = '''*Grünes Polentagriess*
   '''
 
 [[goodies.images]]
-  url = ""
+  url = "celebrate.svg"
   caption = '''
 *Einladung zum Mais-Fest im November 2017 auf dem Bauernhof (Belpberg). Wir feiern zusammen die Ernte, lernen über das Züchten von Mais und essen Mais.*
 '''

@@ -1,4 +1,4 @@
-{{/* 
+{{/*
 Hack: Hugo (v0.14) does not have way to use a content file for the homepage. As a workaround we go trough all pages (content files) here and pick the "index.md". Through "range" this becomes the new context (the dot).
 See: https://github.com/spf13/hugo/issues/330
 */}}
@@ -15,9 +15,9 @@ See: https://github.com/spf13/hugo/issues/330
   </head>
   <body>
     <div id="wrapper">
-      
+
       {{ partial "header.html" . }}
-      
+
       <div id="main" role="main">
         <div id="main-content-header">
           <div class="container">
@@ -42,6 +42,13 @@ See: https://github.com/spf13/hugo/issues/330
         </div>
         <div id="main-content">
           <div class="container">
+
+            <div class="jumbotron">
+              <h4 class="no-mg-t">Aktuell: Mach mit bei der Crowdfunding Kampagne</h4>
+              <p>Hilf mit, im 2017 eine grüne Landmaissorte regional auf 20 Aren (2'000m<sup>2</sup>) anzubauen und erhalte einen Anteil am Ertrag.</p>
+              <a class="btn btn-contrast no-mg-b" href="/crowdfunding/">zum Crowdfunding</a>
+            </div>
+
             <div class="row">
               <div class="col-sm-12">
                 <div class="lead lead-sm text-center">
