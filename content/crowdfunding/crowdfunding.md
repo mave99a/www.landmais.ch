@@ -21,6 +21,16 @@ Das BLW finanziert die Hälfte der Produktionskosten. Um die Durchführung zu er
 Hilf mit, die Vielfalt von Maissorten zu erhalten.
 '''
 
+[goal1]
+  price_per_backer = 80
+  seeking_backers = 25
+  backers = 6
+
+[goal2]
+  price_per_backer = 80
+  seeking_backers = 10
+  backers = 0
+
 [goodies]
   text = '''
 Bist du gespannt auf ein Produkt, das farblich und geschmacklich ganz neue Seiten aufzeigt und deine Vorstellung von Polenta revolutioniert? Dann nimm teil an unserem Projekt und sichere dir die Möglichkeit, beim Anbau hautnah dabei zu sein und dich mit uns Ende 2017 über die eingebrachte Ernte zu freuen.

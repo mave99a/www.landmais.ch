@@ -55,13 +55,14 @@
                     <h4 class="mg-t-lg">Aktueller Stand (Ziel 1)</h3>
 
                       <div class="progress progress-md mg-t mg-b-xs">
-                        <div class="progress-bar progress-bar-medium" role="progressbar" style="width: 20%">
-                          20 %
+                        {{ $goal1_percent := div (mul .Params.goal1.backers 100) .Params.goal1.seeking_backers }}
+                        <div class="progress-bar progress-bar-medium" role="progressbar" style="width: {{ $goal1_percent }}%">
+                          {{ $goal1_percent }} %
                         </div>
                       </div>
                       <p>
-                        <strong>CHF 400</strong> von CHF 2'000 finanziert<br>
-                        <strong>5 Unterstützer</strong> von 25
+                        <strong>CHF {{ mul .Params.goal1.backers .Params.goal1.price_per_backer }}</strong> von CHF  {{ mul .Params.goal1.seeking_backers .Params.goal1.price_per_backer }} finanziert<br>
+                        <strong>{{ .Params.goal1.backers }} Unterstützer</strong> von {{ .Params.goal1.seeking_backers }}
                       </p>
                     </div>
                   </div>
@@ -79,13 +80,14 @@
                       <h4 class="mg-t-lg">Aktueller Stand (Ziel 2)</h3>
 
                         <div class="progress progress-md mg-t mg-b-xs">
-                          <div class="progress-bar progress-bar-medium" role="progressbar" style="width: 0%">
-                            0 %
+                          {{ $goal2_percent := div (mul .Params.goal2.backers 100) .Params.goal2.seeking_backers }}
+                          <div class="progress-bar progress-bar-medium" role="progressbar" style="width: {{ $goal2_percent }}%">
+                            {{ $goal2_percent }} %
                           </div>
                         </div>
                         <p>
-                          <strong>CHF 0</strong> von CHF 800 finanziert<br>
-                          <strong>0 Unterstützer</strong> von 10
+                          <strong>CHF {{ mul .Params.goal2.backers .Params.goal2.price_per_backer }}</strong> von CHF  {{ mul .Params.goal2.seeking_backers .Params.goal2.price_per_backer }} finanziert<br>
+                          <strong>{{ .Params.goal2.backers }} Unterstützer</strong> von {{ .Params.goal2.seeking_backers }}
                         </p>
                       </div>
                     </div>
