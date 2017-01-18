@@ -25,7 +25,7 @@ Die vielfältigen Farben und Formen sowie die verschiedenen Maisarten haben ein 
   icon = "fa-line-chart"
   titel = "Landmais kann sehr ertragreich sein"
   text = '''
-Entgegen gängiger Erwartungen sind auch ertragsmässig gute bis sehr gute Resultate möglich. In der Arbeit [Landmais-Ertragsvergleich (Meyer, 2014)](https://github.com/phmeyer/landmais.ch/releases/download/v1.0/landmais-ertragsvergleich-meyer-2014-ba-hafl.pdf) konnte gezeigt werden, dass gewisse Sorten sogar den Ertrag von modernen Hybridmaissorten deutlich übertreffen können.
+Entgegen gängiger Erwartungen sind auch ertragsmässig gute bis sehr gute Resultate möglich. In der Arbeit [Landmais-Ertragsvergleich (Meyer, 2014)](/downloads/landmais-ertragsvergleich-meyer-2014-ba-hafl.pdf) konnte gezeigt werden, dass gewisse Sorten sogar den Ertrag von modernen Hybridmaissorten deutlich übertreffen können.
 '''
 
 [[argumente]]
@@ -83,7 +83,7 @@ Die Abbildung zeigt die genetische Struktur der vier Sortentypen. Die Population
 Die Problematik dreht sich heute hauptsächlich um die Eigenschaft der Hybridsorten, nur eine Generation lang angebaut werden zu können. „Daher können die von Pflanzen einer Hybridsorte geernteten Samen nicht für den Nachbau dieser Sorte verwendet werden“ (Becker, 2011). Die Sorte ist also nicht samenecht, was von Kritikern als unnatürlich empfunden wird. Sie monieren, dass die Aufgabe eines Samens die Verbreitung der Art ist. Diese funktioniere so nicht mehr herkömmlich.
 
 Zu den Vorteilen von Hybridmaissorten zählt die oben bereits erwähnte höhere Homogenität gegen-über einer Populationssorte. Diese bewirkt eine ausgeglichenere Qualität (Keiser 2012, 52) sowie einen einheitlicheren Wuchs, der eine einfache maschinelle Bearbeitung und Ernte (z.B. dank einheitlicher Abreife) erlaubt (Becker 2011, 297). Hybridsorten haben zudem meist eine verbesserte Standfestigkeit, was selbst Verfechter der Populationssorten anerkennen (Häfeli 2013, persönliche Mitteilung).
-    
+
 <blockquote>
   <p>Nur bei Sorten mit hoher genetischer Homogenität ist es möglich, dass alle Pflanzen der Sorte gleichermassen den gewünschten Zuchtzielen entsprechen.</p>
   <footer>Becker 2011, 291</footer>
@@ -98,9 +98,9 @@ Einige Autoren sehen in der Hybridzucht den Grund für die in den letzten Jahrze
 
 ### Steigende Machtkonzentration der grossen Saatgutunternehmen
 
-Weiter weisen kleinere Züchter darauf hin, dass es bei Hybridsorten schwierig sei, mit den aktuellen Sorten anderer Züchter weiterzuzüchten, da das Züchterprivileg nicht für die Elternlinien gilt (Kunz 2014, Interview). Dies bewirke eine steigende Machtkonzentration hin zu grossen Saatgutunternehmen, weil diesen mehr Geld für die Forschung neuer Linien zur Verfügung stehe. 
+Weiter weisen kleinere Züchter darauf hin, dass es bei Hybridsorten schwierig sei, mit den aktuellen Sorten anderer Züchter weiterzuzüchten, da das Züchterprivileg nicht für die Elternlinien gilt (Kunz 2014, Interview). Dies bewirke eine steigende Machtkonzentration hin zu grossen Saatgutunternehmen, weil diesen mehr Geld für die Forschung neuer Linien zur Verfügung stehe.
 
-Die immer grösser werdenden Saatgutkonzerne wecken Befürchtungen, dass die Landwirte in Entwicklungsländern in eine immer stärkere Abhängigkeit zu diesen Unternehmen geraten (Rösch, 2010). Walter Schmid, Zuchtleiter der KWS Saat AG, hält dem entgegen, dass ohne eine finanzierte Züchtung die Maisertragssteigerungen der letzten Jahrzehnte nicht möglich gewesen wären (ebd.). Dieser Mehrertrag komme schlussendlich ebenfalls den Landwirten zu Gute. 
+Die immer grösser werdenden Saatgutkonzerne wecken Befürchtungen, dass die Landwirte in Entwicklungsländern in eine immer stärkere Abhängigkeit zu diesen Unternehmen geraten (Rösch, 2010). Walter Schmid, Zuchtleiter der KWS Saat AG, hält dem entgegen, dass ohne eine finanzierte Züchtung die Maisertragssteigerungen der letzten Jahrzehnte nicht möglich gewesen wären (ebd.). Dieser Mehrertrag komme schlussendlich ebenfalls den Landwirten zu Gute.
 '''
 
 [[quellen]]
