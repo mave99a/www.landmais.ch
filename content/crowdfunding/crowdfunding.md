@@ -3,6 +3,7 @@ layout = "crowdfunding"
 title = "Crowdfunding"
 description = "Crowdfunding zum Erhalt von alten Landmaissorten."
 slug = "/"
+image = "landmaissorten.jpg"
 
 [menu.main]
   weight = 6
