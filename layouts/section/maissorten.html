@@ -59,8 +59,8 @@
             </div>
 
             <div class="row sorten-boxes" id="sorten-container">
-              {{ $taxonomy := index .Site.Taxonomies.collections "maissorten" }}
-              {{ range $taxonomy.Pages.ByWeight }}
+
+              {{ range .Data.Pages }}
               <div class="col-sm-6 sorten-box{{ range .Params.tags }} sorten-filter-{{ . | urlize }}{{ end }} sorten-item">
                 <a href="{{ .URL }}">
                   <div class="image-link">

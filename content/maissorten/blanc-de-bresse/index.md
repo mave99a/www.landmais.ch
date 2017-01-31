@@ -1,9 +1,7 @@
 +++
-collections = [ "maissorten" ]
 title = "Blanc de Bresse"
 description = "Traditionelle Sorte aus der Bresse (F)"
 weight = 9
-slug = "/"
 tags = [ "Hartmais" ]
 image = "blanc-de-bresse.jpg"
 
@@ -34,8 +32,8 @@ Dieser Hartmais wurde von *Anhalonium* im 2013 bezogen.
     url = "blanc-de-bresse-koerner.jpg"
     url_large = "blanc-de-bresse-koerner-large.jpg"
     caption = "Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Die Sorte Blanc de Bresse wird von Landmais.ch seit 2013 angebaut. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.
@@ -48,8 +46,8 @@ Ebenfalls möglich ist der Anbau zusammen mit Kürbis. Hier müssen die Pflanzab
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 Über die genaue Herkunft und Geschichte der Sorte Blanc de Bresse ist *Landmais.ch* nichts bekannt.
@@ -68,7 +66,7 @@ Für das oben erwähnte Gericht "Gaudes" werden die Kolben bereits in der Milchr
     url = "blanc-de-bresse-koernerquerschnitt.jpg"
     url_large = "blanc-de-bresse-koernerquerschnitt.jpg"
     caption = "Blanc de Bresse Körnerquerschnitt"
-    
+
 
 [[quellen]]
   text = '''

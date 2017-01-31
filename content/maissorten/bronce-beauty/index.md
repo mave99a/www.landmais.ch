@@ -1,9 +1,7 @@
 +++
-collections = [ "maissorten" ]
 title = "Bronce Beauty"
 description = "Alte Indianersorte aus den USA"
 weight = 6
-slug = "/"
 tags = [ "Hartmais" ]
 image = "bronce-beauty-1.jpg"
 
@@ -26,7 +24,7 @@ Die recht grossen, unifarbenen Kolben sind meist in einem dunkelbraunen Ton gef�
     url_small = "bronce-beauty-2-small.jpg"
     url_large = "bronce-beauty-2-large.jpg"
     caption = "Bronce Beauty 2"
-    
+
   [[intro.gallery]]
     url = "bronce-beauty-3.jpg"
     url_small = "bronce-beauty-3-small.jpg"
@@ -44,8 +42,8 @@ Dieser Hartmais wurde im 2013 von einer Genbank der ARS USDA Iowa bezogen und 20
     url = "bronce-beauty-makro.jpg"
     url_large = "bronce-beauty-makro-large.jpg"
     caption = "Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Bronce Beauty wird von Landmais.ch seit 2014 angebaut. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.
@@ -58,8 +56,8 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 Das Saatgut stammt vom [Indianervolk der Winnebago in Wisconsin (USA)](http://www.ars-grin.gov/cgi-bin/npgs/acc/display.pl?1016393), die diese Sorte seit langem anbauen. Sie erzählen sich, dass die ersten weissen Siedler die Sorte Bronce Beauty nannten, weshalb sie heute unter diesem Namen geführt ist.

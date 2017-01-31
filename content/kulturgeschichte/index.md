@@ -1,8 +1,6 @@
 +++
-layout = "kulturgeschichte"
 title = "Kulturgeschichte"
 description = "Kulturgeschichte von Mais"
-slug = "/"
 
 [menu.main]
   weight = 4

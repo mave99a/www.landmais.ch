@@ -1,9 +1,7 @@
 +++
-collections = [ "maissorten" ]
 title = "Baspinar"
 description = "Ertragreicher Popcornmais"
 weight = 7
-slug = "/"
 tags = [ "Popcornmais" ]
 image = "baspinar-rot.jpg"
 
@@ -30,13 +28,13 @@ An den schon verblühten Kolben bilden sich häufig Nebenkolben, die jeweils auc
     url_small = "baspinar-dunkelrot-small.jpg"
     url_large = "baspinar-dunkelrot-large.jpg"
     caption = "Baspinar Dunkelrot"
-    
+
   [[intro.gallery]]
     url = "baspinar-hellrot.jpg"
     url_small = "baspinar-hellrot-small.jpg"
     url_large = "baspinar-hellrot-large.jpg"
     caption = "Baspinar Hellrot"
-    
+
   [[intro.gallery]]
     url = "baspinar-gelb.jpg"
     url_small = "baspinar-gelb-small.jpg"
@@ -60,8 +58,8 @@ Dieser Hartmais wurde von *Anhalonium* im 2013 bezogen.
     url = "baspinar-dunkelrot-makro.jpg"
     url_large = "baspinar-dunkelrot-makro-large.jpg"
     caption = "Dunkelrot Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Baspinar wird von *Landmais.ch* seit 2013 angebaut. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.
@@ -74,8 +72,8 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 Über die genaue Herkunft und Geschichte der Sorte *Baspinar* ist *Landmais.ch* nichts bekannt.
@@ -94,7 +92,7 @@ Diese Sorte eignet sich ebenfalls bestens zum Herstellen von Popcorn.
     url = "baspinar-koernerquerschnitt.jpg"
     url_large = "baspinar-koernerquerschnitt.jpg"
     caption = "Baspinar Körnerquerschnitt"
-    
+
 
 [[quellen]]
   text = '''

@@ -1,9 +1,7 @@
 +++
-collections = [ "maissorten" ]
 title = "Cuzco Morado"
 description = "Eine südamerikanische Sorte aus den Anden"
 weight = 2
-slug = "/"
 tags = [ "Weichmais" ]
 image = "morado-2012.jpg"
 
@@ -30,25 +28,25 @@ Die schwarz gefärbten Kolben können kurz und breit oder lang und etwas schmale
     url_small = "morado-2013-small.jpg"
     url_large = "morado-2013-large.jpg"
     caption = "Morado 2013"
-    
+
   [[intro.gallery]]
     url = "cuzco-morado.jpg"
     url_small = "cuzco-morado-small.jpg"
     url_large = "cuzco-morado-large.jpg"
     caption = "Cuzco Morado"
-    
+
   [[intro.gallery]]
     url = "morado-besen.jpg"
     url_small = "morado-besen-small.jpg"
     url_large = "morado-besen-large.jpg"
     caption = "Blühender Kolben mit männlichem Pollenansatz"
-    
+
   [[intro.gallery]]
     url = "morado-kolbenquerschnitt.jpg"
     url_small = "morado-kolbenquerschnitt-small.jpg"
     url_large = "morado-kolbenquerschnitt-large.jpg"
     caption = "Morado Kolbenquerschnitt"    
-    
+
   [[intro.gallery]]
     url = "morado-kolben-mit-pollen.jpg"
     url_small = "morado-kolben-mit-pollen-small.jpg"
@@ -58,7 +56,7 @@ Die schwarz gefärbten Kolben können kurz und breit oder lang und etwas schmale
 
 [herkunft]
   text = '''
-Zum Moradomais gehören anthocyanhaltige, violett-schwarze Weichmaissorten aus Peru und Bolivien, die vermutlich alle von einer ursprünglichen Sorte mit Namen Kculli (oder Kulli) abstammen. Morado heisst auf Spanisch "violett", auf Englisch wird von "Purple Corn" gesprochen. Heute gibt es verschiedene Sorten, die fast schwarze Körner ausbilden. 
+Zum Moradomais gehören anthocyanhaltige, violett-schwarze Weichmaissorten aus Peru und Bolivien, die vermutlich alle von einer ursprünglichen Sorte mit Namen Kculli (oder Kulli) abstammen. Morado heisst auf Spanisch "violett", auf Englisch wird von "Purple Corn" gesprochen. Heute gibt es verschiedene Sorten, die fast schwarze Körner ausbilden.
 
 Landmais.ch hat 4 verschiedene Herkünfte für die seit 2012 angebaute Sorte. Ein Teil des ursprünglichen Saatguts stammt von Anhalonium.com. Der Rest stammt aus Peru (Touristensouvenir, Esswaren und Dekorationsware). Dies erklärt auch die momentan nicht einheitlichen Merkmale der Varietät.
 '''
@@ -66,8 +64,8 @@ Landmais.ch hat 4 verschiedene Herkünfte für die seit 2012 angebaute Sorte. Ei
     url = "morado-nah.jpg"
     url_large = "morado-nah-large.jpg"
     caption = "Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Cuzco Morado wird von Landmais.ch bereits seit 2012 angebaut. Trotz der sehr späten Reife wurde direkt in den Boden gesät und damit gute Ergebnisse erzielt. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist. Die späte Reife, der hohe Wuchs und der viel frühere Beginn der Fahnenblüte (Proterandrie) stellen Hindernisse für den erfolgreichen Anbau dar. Das Vorziehen der Pflanzen hat nur kleine Auswirkungen auf den Start der Blüte (ca. 1 Woche früher). Dies hängt damit zusammen, dass diese Maissorte ihr Wachstum an die Nachtlänge koppelt (Photoperiodismus). Laut Schilperoord  ist Mais ursprünglich „eine Pflanze der länger werdenden Nächte“ und blüht erst, wenn die Tage wieder kürzer werden. Cuzco Morado hat diesen Mechanismus noch nicht verloren.
@@ -80,8 +78,8 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 <div class="row">
@@ -154,7 +152,7 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
 
 [verwendung]
   text = '''
-Die Kolben können erst sehr spät geerntet werden und müssen noch getrocknet werden, bis sie nur noch maximal 14% Wasser enthalten (86% TS). Cuzco Morado ist ein Weichmais. Beim Mahlen entsteht nur Mehl und kein Griess. Aufgrund der Samenhülle entsteht ein schön violett gefärbtes Mehl, das für Brot (ca. 30%-Anteil) oder Tortillas verwendet werden kann. In Bolivien wird mit dem Mehl das beliebte Heissgetränk Api hergestellt. In Peru das Dessert Mazamorra und das kalte Getränk Chicha Morada. Ebenfalls eignet es sich zum Brauen von Bier und auch violette Corn Flakes dürften damit herzustellen sein. 
+Die Kolben können erst sehr spät geerntet werden und müssen noch getrocknet werden, bis sie nur noch maximal 14% Wasser enthalten (86% TS). Cuzco Morado ist ein Weichmais. Beim Mahlen entsteht nur Mehl und kein Griess. Aufgrund der Samenhülle entsteht ein schön violett gefärbtes Mehl, das für Brot (ca. 30%-Anteil) oder Tortillas verwendet werden kann. In Bolivien wird mit dem Mehl das beliebte Heissgetränk Api hergestellt. In Peru das Dessert Mazamorra und das kalte Getränk Chicha Morada. Ebenfalls eignet es sich zum Brauen von Bier und auch violette Corn Flakes dürften damit herzustellen sein.
 
 Für die Ernährung sehr interessant ist die hohe Konzentration von Anthocyanen in den Körnern. Anthocyan ist ein purpurroter Farbstoff, der in vielen Nahrungsmitteln vorkommt (z.B. Rande, Brombeere, etc.). Anthocyane können im Körper sogenannte „freie Radikale“ binden, die den Menschen sonst schaden würden. Gemäss Studien wirken sie vorsorglich gegen Krebs, Diabetes und Fettleibigkeit. Sie schützen ausserdem die Netzhaut und regen die Blutzirkulation an (Risco Mendoza, 2007).
 
@@ -164,7 +162,7 @@ Genug Gründe, um dieser Maissorte für die menschliche Ernährung mehr Beachtun
     url = "morado-koernerquerschnitt.jpg"
     url_large = "morado-koernerquerschnitt.jpg"
     caption = "Morado Körnerquerschnitt"
-    
+
 
 [[quellen]]
   text = '''

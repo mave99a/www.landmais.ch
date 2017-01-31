@@ -1,9 +1,7 @@
 +++
-collections = [ "maissorten" ]
 title = "Bijeli Crveni"
 description = "Eine sehr ertragreiche Sorte"
 weight = 3
-slug = "/"
 tags = [ "Zahnmais" ]
 image = "bijeli-1.jpg"
 
@@ -29,8 +27,8 @@ Die meist uni rot oder gelb gefärbten Kolben sind ansprechend gross und besitze
     url_small = "bijeli-2-small.jpg"
     url_large = "bijeli-2-large.jpg"
     caption = "Bijeli Crveni 2"
-    
-    
+
+
 [herkunft]
   text = '''
 Das bei *Landmais.ch* angebaute Saatgut wurde im Jahr 2013 über [Anhalonium.com](http://anhalonium.com/) bezogen. Das Saatgut enthielt rote und gelbe Körner, wogegen nur die roten Körner ausgesät wurden.
@@ -41,8 +39,8 @@ Das bei *Landmais.ch* angebaute Saatgut wurde im Jahr 2013 über [Anhalonium.com
     url = "bijeli-koerner.png"
     url_large = "bijeli-koerner-large.png"
     caption = "Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Bijeli Crveni wird von Landmais.ch seit 2013 angebaut. Die Sorte wächst problemlos. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.
@@ -55,8 +53,8 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 Über die genaue Herkunft und Geschichte der Sorte Bijeli Crveni ist *Landmais.ch* nichts bekannt.
@@ -75,7 +73,7 @@ Diese Sorte eignet sich ebenfalls bestens zum Herstellen von Popcorn.
     url = "bijeli-koernerquerschnitt.jpg"
     url_large = "bijeli-koernerquerschnitt-large.jpg"
     caption = "Bijeli Crveni Körnerquerschnitt"
-    
+
 
 [[quellen]]
   text = '''

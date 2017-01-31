@@ -1,9 +1,7 @@
 +++
-collections = [ "maissorten" ]
 title = "Oaxacan Green"
 description = "Wüchsig und ertragreich"
 weight = 1
-slug = "/"
 tags = [ "Zahnmais" ]
 image = "oaxacan-green-1.jpg"
 
@@ -30,7 +28,7 @@ Die grün gefärbten Kolben können kurz und breit oder lang und etwas schmaler 
     url_small = "oaxacan-green-2-small.jpg"
     url_large = "oaxacan-green-2-large.jpg"
     caption = "Oaxacan Green 2"
-    
+
   [[intro.gallery]]
     url = "oaxacan-green-3.jpg"
     url_small = "oaxacan-green-3-small.jpg"
@@ -46,8 +44,8 @@ Das bei *Landmais.ch* angebaute Saatgut wurde im Jahr 2011 über [freie-saaten.o
     url = "koerner-makro.jpg"
     url_large = "koerner-makro-large.jpg"
     caption = "Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Oaxacan Green wird von *Landmais.ch* bereits seit 2011 angebaut. Die Sorte wächst problemlos. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.
@@ -60,8 +58,8 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 Die Sorte Oaxacan Green stammt angeblich aus der Provinz Oaxacan im südlichen Mexico (siehe [Seed Savers](http://www.seedsavers.org/onlinestore/corn/Corn-Oaxacan-Green-Dent.html)). Sie soll seit hunderten von Jahre von den dort sesshaften Zapoteken angebaut worden sein, um damit Tortillas und Tamales aus dem grünen Mehl herzustellen. Genaue Informationen konnten jedoch bisher nicht gefunden werden.
@@ -78,7 +76,7 @@ Die Zapoteken verwendeten das grüne Mehl für die Herstellung von Tamales (Tort
     url = "oaxacan-koernerquerschnitt.jpg"
     url_large = "oaxacan-koernerquerschnitt-large.jpg"
     caption = "Oaxacan Green Körnerquerschnitt"
-    
+
 
 [[quellen]]
   text = '''

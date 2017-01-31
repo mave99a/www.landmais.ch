@@ -1,8 +1,6 @@
 +++
-layout = "warum"
 title = "Warum Landmais"
 description = "Warum Landmais"
-slug = "/"
 
 [menu.main]
   weight = 3

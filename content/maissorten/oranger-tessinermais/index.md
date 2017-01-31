@@ -1,9 +1,7 @@
 +++
-collections = [ "maissorten" ]
 title = "Oranger Tessinermais"
 description = "Problemlos wachsend und ertragreich"
 weight = 4
-slug = "/"
 tags = [ "Hartmais" ]
 image = "oranger-tessinermais-1.jpg"
 draft = true

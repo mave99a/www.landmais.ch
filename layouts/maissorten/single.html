@@ -27,14 +27,12 @@
                   <li class="active">{{ .Title }}</li>
                 </ol>
                 <div class="directional">
-                  {{ $taxonomy := index .Site.Taxonomies.collections "maissorten" }}
-
-                  {{ with ($taxonomy.Pages.ByWeight.Prev .) }}
+                  {{ with .NextInSection  }}
                   <a class="has-tooltip left" data-placement="right" data-title="{{ .Title }}" href="{{ .URL }}">
                     <i class="fa fa-chevron-left"></i>
                   </a>
                   {{ end }}
-                  {{ with ($taxonomy.Pages.ByWeight.Next .) }}
+                  {{ with .PrevInSection }}
                     <a class="has-tooltip right" data-placement="left" data-title="{{ .Title }}" href="{{ .URL }}">
                       <i class="fa fa-chevron-right"></i>
                     </a>

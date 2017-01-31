@@ -1,9 +1,7 @@
 +++
-collections = [ "maissorten" ]
 title = "Plata"
 description = "Hartmaissorte aus Argentinien"
 weight = 5
-slug = "/"
 tags = [ "Hartmais" ]
 image = "plata-orange.jpg"
 
@@ -28,13 +26,13 @@ Die mittelgrossen, unifarbenen Kolben sind in einem leuchtend orangen Ton gefär
     url_small = "plata-rot-small.jpg"
     url_large = "plata-rot-large.jpg"
     caption = "Plata Rot"
-    
+
   [[intro.gallery]]
     url = "plata-blatt.jpg"
     url_small = "plata-blatt.jpg"
     url_large = "plata-blatt.jpg"
     caption = "Sortentypische, helle Flecken auf den Blättern"
-    
+
 
 [herkunft]
   text = '''
@@ -44,8 +42,8 @@ Dieser Hartmais wurde von *Anhalonium* im 2013 bezogen.
     url = "plata-makro.jpg"
     url_large = "plata-makro-large.jpg"
     caption = "Körner Makro"
-    
-    
+
+
 [anbau]
   text = '''
 Die Sorte Plata wird von *Landmais.ch* seit 2012 angebaut.. Wichtig ist eine rechteckige oder runde Anordnung, damit die Befruchtung gewährleistet ist.
@@ -58,8 +56,8 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
     url = "anbau-parzellenbeispiel.png"
     url_large = "anbau-parzellenbeispiel.png"
     caption = "Anbau"
-    
-    
+
+
 [geschichte]
   content = '''
 Über die Geschichte der Sorte Plata ist *Landmais.ch* nichts bekannt.
@@ -78,7 +76,7 @@ Ist für einmal zu viel Griess vorhanden, dann eignet sich dieses eingeweicht au
     url = "plata-koernerquerschnitt.jpg"
     url_large = "plata-koernerquerschnitt.jpg"
     caption = "Plata Körnerquerschnitt"
-    
+
 
 [[quellen]]
   text = '''
