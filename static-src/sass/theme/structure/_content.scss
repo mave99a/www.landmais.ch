@@ -13,7 +13,7 @@ body {
   /*
   &.boxed {
     background-color: $boxed-body-bg;
-    background-image: image-url("bg_patterns/bg_boxed.png");
+    background-image: url("bg_patterns/bg_boxed.png");
     @include image-2x("bg_patterns/bg_boxed.png", 200px, 200px);
 
     #wrapper {

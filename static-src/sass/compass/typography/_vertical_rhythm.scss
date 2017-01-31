@@ -81,7 +81,7 @@ $base-half-leader: $base-leader / 2;
 // Compass default gradient image.
 @mixin debug-vertical-alignment($img: false) {
   @if $img {
-    background: image-url($img);
+    background: url($img);
   } @else {
     @include baseline-grid-background($base-rhythm-unit);
   }
