@@ -23,7 +23,7 @@ Hilf mit, die Vielfalt von Maissorten zu erhalten.
 [goal1]
   price_per_backer = 80
   seeking_backers = 25
-  backers = 12
+  backers = 13
 
 [goal2]
   price_per_backer = 80
