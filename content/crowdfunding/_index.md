@@ -28,7 +28,7 @@ Hilf mit, die Vielfalt von Maissorten zu erhalten.
 [goal2]
   price_per_backer = 80
   seeking_backers = 10
-  backers = 0
+  backers = 10
 
 [goodies]
   text = '''
