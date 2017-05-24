@@ -10,9 +10,9 @@ image = "bijeli-1.jpg"
   text = '''
 **Bijeli Crveni** ist eine wüchsige und ertragreiche Sorte, die im Frühling bisher weder Kältestress- noch Mangelsymptome zeigte.
 
-In einer Erhebung im Jahr 2013 (Meyer, 2013) waren die Pflanzen durch¬schnittlich 274 cm hoch und produzierten 1.74 Kolben pro Pflanze. Der Stängeldurchmesser betrug durchschnittlich 2 cm.
+In einer Erhebung im Jahr 2013 (Meyer, 2013) waren die Pflanzen durchschnittlich 274 cm hoch und produzierten 1.74 Kolben pro Pflanze. Der Stängeldurchmesser betrug durchschnittlich 2 cm.
 
-Die Sorte wuchs und blühte einheitlich und benötigte 1751 Gradtage von der Saat bis zur Reife. Davon entfielen 1138 Gradtage bis zur Blüte. Damit ist sie eher spätreif und vergleichbar mit einer mittelspäten bis späten Körner¬mais¬sorte der offiziellen Sortenliste.
+Die Sorte wuchs und blühte einheitlich und benötigte 1751 Gradtage von der Saat bis zur Reife. Davon entfielen 1138 Gradtage bis zur Blüte. Damit ist sie eher spätreif und vergleichbar mit einer mittelspäten bis späten Körnermaissorte der offiziellen Sortenliste.
 
 Die meist uni rot oder gelb gefärbten Kolben sind ansprechend gross und besitzen ca. 16 Körnerreihen. Die Körner zeigen die typische Eindellung des Zahnmais.
 '''

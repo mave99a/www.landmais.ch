@@ -8,9 +8,9 @@ draft = true
 
 [intro]
   text = '''
-Der **Orange Tessinermais** ist eine problemlos wachsende und ertragreiche Sorte, die im Frühling keinen Kältestress zeigt. An wenigen Pflanzen kann die Sorte Mangel¬symptome für Phosphor und Magnesium aufweisen.
+Der **Orange Tessinermais** ist eine problemlos wachsende und ertragreiche Sorte, die im Frühling keinen Kältestress zeigt. An wenigen Pflanzen kann die Sorte Mangelsymptome für Phosphor und Magnesium aufweisen.
 
-In einer Erhebung im Jahr 2013 (Meyer, 2013) waren die Pflanzen durch¬schnittlich 205 cm hoch und produzierten 1.09 Kolben pro Pflanze. Der Stängeldurchmesser betrug durchschnittlich 1.36 cm.
+In einer Erhebung im Jahr 2013 (Meyer, 2013) waren die Pflanzen durchschnittlich 205 cm hoch und produzierten 1.09 Kolben pro Pflanze. Der Stängeldurchmesser betrug durchschnittlich 1.36 cm.
 
 Die Sorte wuchs und blühte einheitlich und benötigte 1569 Gradtage von der Saat bis zur Reife. Davon entfielen 984 Gradtage bis zur Blüte. Damit ist sie vergleichbar mit einer mittelfrühen Silomaissorte der offiziellen Sortenliste der Schweiz.
 

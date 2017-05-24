@@ -7,9 +7,9 @@ image = "plata-orange.jpg"
 
 [intro]
   text = '''
-**Plata** ist eine problemlos wachsende und recht ertragreiche Sorte, die im Frühling bei kalter Witterung langsam wächst. An wenigen Pflanzen kann die Sorte r Mangel¬symptome für Phosphor und Magnesium aufweisen. Im weiteren Verlauf der Vegetation ist Plata eine sehr wüchsige und schnellwachsende Sorte.
+**Plata** ist eine problemlos wachsende und recht ertragreiche Sorte, die im Frühling bei kalter Witterung langsam wächst. An wenigen Pflanzen kann die Sorte Mangelsymptome für Phosphor und Magnesium aufweisen. Im weiteren Verlauf der Vegetation ist Plata eine sehr wüchsige und schnellwachsende Sorte.
 
-In einer Erhebung im Jahr 2013 (Meyer, 2013) waren die Pflanzen durch¬schnittlich 227 cm hoch und produzierten 1.67 Kolben pro Pflanze. Der Stängeldurchmesser betrug durchschnittlich 1.57 cm.
+In einer Erhebung im Jahr 2013 (Meyer, 2013) waren die Pflanzen durchschnittlich 227 cm hoch und produzierten 1.67 Kolben pro Pflanze. Der Stängeldurchmesser betrug durchschnittlich 1.57 cm.
 
 Die Sorte wuchs und blühte einheitlich und benötigte 1751 Gradtage von der Saat bis zur Reife. Davon entfielen 1104 Gradtage bis zur Blüte. Damit ist sie vergleichbar mit einer mittelspäten Körnermaissorte der offiziellen Sortenliste der Schweiz.
 
