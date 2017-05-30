@@ -9045,6 +9045,9 @@ body.error-page {
   padding-right: 5px;
   height: auto; }
 
+#main-content-header .title a {
+  color: #fff; }
+
 .text-boxes .text-box .toolbar .blog-meta {
   font-family: "Open Sans";
   font-weight: 400;
