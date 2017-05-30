@@ -3,7 +3,7 @@ title = "Kulturgeschichte"
 description = "Kulturgeschichte von Mais"
 
 [menu.main]
-  weight = 4
+  weight = 5
 
 [intro]
   lead = "Wie der Mais im 16. Jahrhunder nach Europa gelangte und zu einem wichtigen Nahrungsmittel wurde."

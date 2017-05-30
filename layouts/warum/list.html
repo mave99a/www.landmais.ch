@@ -1,0 +1,88 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+<div id="main" role="main">
+  <div id="main-content-header">
+    <div class="container container-md">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="title">
+            Warum Landmais
+          </h1>
+          <ol class="breadcrumb">
+            <li>
+              <a href="/">
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li class="active">
+              Warum Landmais
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content">
+    <div class="container container-md">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="icon-boxes icon-boxes-lg">
+            {{ $last_index := sub (len .Params.argumente) 1 }}
+            {{ range $index, $element := .Params.argumente }}
+            {{ if modBool $index 2 }}
+            <div class="row">
+              {{ end }}
+              <div class="col-sm-6 icon-box">
+                <div class="icon icon-wrap icon-circle icon-lg contrast-bg">
+                  <i class="fa {{ $element.icon }} text-white"></i>
+                </div>
+                <div class="content">
+                  <h3 class="title">{{ $element.titel }}</h3>
+                  <p>{{ $element.text | markdownify }}</p>
+                </div>
+              </div>
+            {{ if or (not (modBool $index 2)) (eq $index $last_index) }}
+            </div>
+            {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header page-header-with-icon">
+            <i class="fa fa-star-half-o"></i>
+            <h2>
+              {{ .Params.problematik.titel }}
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      {{ .Params.problematik.text | markdownify }}
+
+      <hr>
+
+      <h4>Quellen</h4>
+
+      <ul class="list-unstyled small">
+        {{ range .Params.quellen }}
+        <li>{{ .text | markdownify }}</li>
+        {{ end }}
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="fade" id="scroll-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+</div>
+{{ end }}

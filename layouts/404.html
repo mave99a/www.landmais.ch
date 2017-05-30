@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    {{ partial "meta.html" . }}
+    {{ partial "head.html" . }}
 
-    <title>{{ .Title }}</title>
+    <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
 
-    {{ partial "head_includes.html" . }}
     {{ partial "analytics_js.html" . }}
   </head>
   <body class="error-page">
@@ -39,6 +38,6 @@
         </div>
       </div>
     </div>
-    {{ partial "body_includes" . }}
+    <script type="text/javascript" src="/js/plugins/modernizr/modernizr.custom.js"></script>
   </body>
 </html>

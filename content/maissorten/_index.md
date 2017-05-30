@@ -4,7 +4,7 @@ description = "Maissorten von Landmais.ch"
 image = "landmaissorten.jpg"
 
 [menu.main]
-  weight = 1
+  weight = 2
 
 [intro]
   lead = '''

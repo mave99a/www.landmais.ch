@@ -1,0 +1,79 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+<div id="main" role="main">
+  <div id="main-content-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="title">
+            Maissorten
+          </h1>
+          <ol class="breadcrumb">
+            <li>
+              <a href="/">
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li class="active">
+              Maissorten
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="lead text-center">{{ .Params.intro.lead | markdownify }}</div>
+          <p class="text-center">{{ .Params.intro.text | markdownify }}</p>
+        </div>
+      </div>
+
+      <!-- Filter -->
+      <div class="row" id="sorten-filter">
+        <div class="col-sm-12">
+          <ul class="nav nav-pills">
+            <li class="active"><a data-filter="*" href="#">Alle</a></li>
+
+            {{ range $key, $taxonomy := .Site.Taxonomies.tags }}
+              {{/* Find the friendly (non-urlized) tag name. */}}
+              {{ $page := index $taxonomy.Pages 0 }}
+              {{ range $friendly := $page.Params.tags }}
+                {{ if eq $key ($friendly | urlize) }}
+                  <li><a data-filter=".sorten-filter-{{ $key }}" href="#">{{ $friendly }}</a></li>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+
+      <div class="row sorten-boxes" id="sorten-container">
+
+        {{ range .Data.Pages }}
+        <div class="col-sm-6 sorten-box{{ range .Params.tags }} sorten-filter-{{ . | urlize }}{{ end }} sorten-item">
+          <a href="{{ .URL }}">
+            <div class="image-link">
+              <img class="img-responsive img-rounded center-block" alt="{{ .Title }}" src="{{ .URL }}{{ .Params.image }}" />
+            </div>
+            <h3 class="title">{{ .Title }}</h3>
+            <p class="description">{{ .Description }}</p>
+            <p class="show-details"><i class="fa fa-plus"></i> Details anzeigen</p>
+          </a>
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+  <div class="fade" id="scroll-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+</div>
+{{ end }}

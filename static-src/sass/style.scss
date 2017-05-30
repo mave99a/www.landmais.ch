@@ -1,5 +1,5 @@
 // The main color.
-$contrast: #8dc153; 
+$contrast: #8dc153;
 
 @import "compass";
 
@@ -10,7 +10,7 @@ $contrast: #8dc153;
 
 @import "plugins/plugins";
 
-@import "theme/common"; 
+@import "theme/common";
 @import "theme/structure/structure";
 
 
@@ -59,6 +59,76 @@ $contrast: #8dc153;
   height: auto;
 }
 
+// Blog meta
+.text-boxes .text-box .toolbar .blog-meta {
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding: 2px 10px;
+  color: #9ca4af;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  & > [class*=" fa-"] {
+    color: #8dc153;
+    margin-right: 10px;
+  }
+}
+
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-more {
+  max-width: calc(50% - 5px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &.right {
+    float: right;
+
+    .fa {
+      float: right;
+      margin-left: 5px;
+      line-height: 18px;
+    }
+  }
+}
+
+// Image Cropping.
+.image-crop {
+  display: block;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; // Crops to the center of the image.
+  }
+}
+
+.image-crop-3by2 {
+  padding-top: 66.666666667%;
+}
+
+.image-crop-5by3 {
+  padding-top: 60%;
+}
+
 
 /*------------------------------------*\
   Overwriting Jednotka Styles
@@ -73,7 +143,7 @@ body {
   Nivo Lightbox Styles
 \*------------------------------------*/
 .nivo-lightbox-theme-default .nivo-lightbox-image img {
-  padding: 10px; 
+  padding: 10px;
 }
 
 $lightbox-icon-size: 30px;
@@ -108,7 +178,7 @@ a[data-lightbox] {
     @include text-shadow(1px 1px 1px $black);
     @include square($portfolio-icon-size);
   }
-  
+
   &:hover {
     &:before {
       @include rgba-fallback(rgba($dark, .30), "background-color");
@@ -140,11 +210,11 @@ a[data-lightbox] {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-    
+
     @include xs-only {
       width: 100%;
     }
-    
+
     a {
       padding: 40px;
       text-decoration: none;
@@ -157,17 +227,17 @@ a[data-lightbox] {
         position: relative;
         bottom: 0;
       }
-      
-      
+
+
       &:hover {
         @include box-shadow(rgba(153, 153, 153, 0.2) 0px 3px 8px 3px);
-        
+
         .description {
           display: none;
         }
-        
+
         .show-details {
-          display: block; 
+          display: block;
           color: $portfolio-color-active;
         }
       }
@@ -188,9 +258,9 @@ a[data-lightbox] {
       @include ellipsis;
       @include transition(color $transition-duration-base);
     }
-    
+
     .show-details {
-      display: none; 
+      display: none;
     }
   }
 }
@@ -215,4 +285,9 @@ a[data-lightbox] {
 
 .container-md {
   max-width: $container-md;
+}
+
+.input-group-btn .btn {
+  font-size: 14px;
+  line-height: 14px;
 }

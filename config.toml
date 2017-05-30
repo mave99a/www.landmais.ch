@@ -1,6 +1,10 @@
 baseurl = "https://www.landmais.ch/"
 languageCode = "de"
 title = "Landmais.ch"
+pluralizeListTitles = false
+preserveTaxonomyNames = true
+removePathAccents = true
+paginatePath = "seite"
 
 [params]
   author = "Philipp Meyer"

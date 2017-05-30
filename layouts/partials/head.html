@@ -1,8 +1,31 @@
-<head>
-  {{ partial "meta.html" . }}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all" >
+<meta name="keywords" content="{{ .Site.Params.keywords }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
+<meta name="description" content="{{ .Description }}">
+<meta name="author" content="{{ .Site.Params.author }}" >
 
-  {{ partial "head_includes.html" . }}
-  {{ partial "analytics_js.html" . }}
-</head>
+<!-- Twitter Card data -->
+<meta name="twitter:card" value="summary">
+
+<!-- Open Graph data -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}" />
+<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ if .Params.image }}<meta property="og:image" content="{{ .Permalink }}{{ .Params.image }}" />{{ end }}
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all"/>
+
+<!-- Icons -->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png">
+
+<!-- RSS -->
+<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+{{ partial "analytics_js.html" . }}

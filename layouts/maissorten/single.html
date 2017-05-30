@@ -1,199 +1,190 @@
-<!DOCTYPE html>
-<html lang="de">
-  {{ partial "head.html" . }}
-  <body>
-    <div id="wrapper">
+{{ define "main" }}
 
-      {{ partial "header.html" . }}
+{{ partial "header.html" . }}
 
-      <div id="main" role="main">
+<div id="main" role="main">
 
-        <div id="main-content-header">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <h1 class="title">{{ .Title }}</h1>
-                <ol class="breadcrumb">
-                  <li>
-                    <a href="/">
-                      <i class="fa fa-home"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/maissorten/">
-                      Maissorten
-                    </a>
-                  </li>
-                  <li class="active">{{ .Title }}</li>
-                </ol>
-                <div class="directional">
-                  {{ with .NextInSection  }}
-                  <a class="has-tooltip left" data-placement="right" data-title="{{ .Title }}" href="{{ .URL }}">
-                    <i class="fa fa-chevron-left"></i>
-                  </a>
-                  {{ end }}
-                  {{ with .PrevInSection }}
-                    <a class="has-tooltip right" data-placement="left" data-title="{{ .Title }}" href="{{ .URL }}">
-                      <i class="fa fa-chevron-right"></i>
-                    </a>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
+  <div id="main-content-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="title">{{ .Title }}</h1>
+          <ol class="breadcrumb">
+            <li>
+              <a href="/">
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/maissorten/">
+                Maissorten
+              </a>
+            </li>
+            <li class="active">{{ .Title }}</li>
+          </ol>
+          <div class="directional">
+            {{ with .NextInSection  }}
+            <a class="has-tooltip left" data-placement="right" data-title="{{ .Title }}" href="{{ .URL }}">
+              <i class="fa fa-chevron-left"></i>
+            </a>
+            {{ end }}
+            {{ with .PrevInSection }}
+              <a class="has-tooltip right" data-placement="left" data-title="{{ .Title }}" href="{{ .URL }}">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            {{ end }}
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div id="main-content">
-          <div class="container">
+  <div id="main-content">
+    <div class="container">
 
-            <!-- Intro -->
-            <div class="text-boxes">
-              <div class="row text-box">
-                <div class="col-sm-6 col-sm-push-6">
-                  <!-- First intro image -->
-                  <a data-lightbox data-lightbox-gallery="main-images" href="{{ .URL }}{{ (index .Params.intro.gallery 0).url_large }}" title="{{ (index .Params.intro.gallery 0).caption }}">
-                    <img class="img-responsive center-block" width="400" alt="{{ (index .Params.intro.gallery 0).caption }}" src="{{ .URL }}{{ (index .Params.intro.gallery 0).url }}">
+      <!-- Intro -->
+      <div class="text-boxes">
+        <div class="row text-box">
+          <div class="col-sm-6 col-sm-push-6">
+            <!-- First intro image -->
+            <a data-lightbox data-lightbox-gallery="main-images" href="{{ .URL }}{{ (index .Params.intro.gallery 0).url_large }}" title="{{ (index .Params.intro.gallery 0).caption }}">
+              <img class="img-responsive center-block" width="400" alt="{{ (index .Params.intro.gallery 0).caption }}" src="{{ .URL }}{{ (index .Params.intro.gallery 0).url }}">
+              <i class="fa fa-search"></i>
+            </a>
+
+            <!-- Additional intro images (optional) -->
+            <div class="row text-center">
+              {{ range $index, $element := .Params.intro.gallery }}
+                {{/* ignore first item */}}
+                {{ if ne $index 0 }}
+                <div class="col-xs-4 mg-t-lg">
+                  <a data-lightbox data-lightbox-gallery="main-images" href="{{ .URL }}{{ $element.url_large }}" title="{{ $element.caption }}">
+                    <img class="img-responsive center-block" alt="{{ $element.caption }}" src="{{ .URL }}{{ $element.url_small }}">
                     <i class="fa fa-search"></i>
                   </a>
-
-                  <!-- Additional intro images (optional) -->
-                  <div class="row text-center">
-                    {{ range $index, $element := .Params.intro.gallery }}
-                      {{/* ignore first item */}}
-                      {{ if ne $index 0 }}
-                      <div class="col-xs-4 mg-t-lg">
-                        <a data-lightbox data-lightbox-gallery="main-images" href="{{ .URL }}{{ $element.url_large }}" title="{{ $element.caption }}">
-                          <img class="img-responsive center-block" alt="{{ $element.caption }}" src="{{ .URL }}{{ $element.url_small }}">
-                          <i class="fa fa-search"></i>
-                        </a>
-                      </div>
-                      {{ end }}
-                    {{ end }}
-                  </div>
                 </div>
-                <div class="col-sm-6 col-sm-pull-6 mg-t-xso-lg">
-                  {{ .Params.intro.text | markdownify }}
-                </div>
-              </div>
-            </div>
-
-            <!-- Herkunft -->
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="page-header page-header-with-icon">
-                  <i class="fa fa-leaf"></i>
-                  <h2>
-                    Herkunft
-                  </h2>
-                </div>
-
-                <div class="text-boxes">
-                  <div class="row">
-                    <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="{{ .URL }}{{ .Params.herkunft.image.url_large }}" title="{{ .Params.herkunft.image.caption }}">
-                        <img class="img-responsive center-block" alt="{{ .Params.herkunft.image.caption }}" src="{{ .URL }}{{ .Params.herkunft.image.url }}">
-                        <i class="fa fa-search"></i>
-                      </a>
-                    </div>
-                    <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
-                      {{ .Params.herkunft.text | markdownify }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Anbau -->
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="page-header page-header-with-icon">
-                  <i class="fa fa-leaf"></i>
-                  <h2>
-                    Anbau
-                  </h2>
-                </div>
-
-                <div class="text-boxes">
-                  <div class="row">
-                    <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="{{ .URL }}{{ .Params.anbau.image.url_large }}" title="{{ .Params.anbau.image.caption }}">
-                        <img class="img-responsive center-block" alt="{{ .Params.anbau.image.caption }}" src="{{ .URL }}{{ .Params.anbau.image.url }}">
-                        <i class="fa fa-search"></i>
-                      </a>
-                    </div>
-                    <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
-                      {{ .Params.anbau.text | markdownify }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Geschichte -->
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="page-header page-header-with-icon">
-                  <i class="fa fa-leaf"></i>
-                  <h2>
-                    Geschichte
-                  </h2>
-                </div>
-
-                <div class="text-boxes">
-                  {{ .Params.geschichte.content | markdownify }}
-                </div>
-              </div>
-            </div>
-
-            <!-- Verwendung -->
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="page-header page-header-with-icon">
-                  <i class="fa fa-leaf"></i>
-                  <h2>
-                    Verwendung
-                  </h2>
-                </div>
-
-                <div class="text-boxes">
-                  <div class="row">
-                    <div class="col-sm-4 col-sm-push-8">
-                      <a data-lightbox href="{{ .URL }}{{ .Params.verwendung.image.url_large }}" title="{{ .Params.verwendung.image.caption }}">
-                        <img class="img-responsive center-block" alt="{{ .Params.verwendung.image.caption }}" src="{{ .URL }}{{ .Params.verwendung.image.url }}">
-                        <i class="fa fa-search"></i>
-                      </a>
-                    </div>
-                    <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
-                      {{ .Params.verwendung.text | markdownify }}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quellen -->
-            {{ if isset .Params "quellen" }}
-            <hr>
-
-            <h4>Quellen</h4>
-
-            <ul class="list-unstyled small">
-              {{ range .Params.quellen }}
-              <li>{{ .text | markdownify }}</li>
+                {{ end }}
               {{ end }}
-            </ul>
-            {{ end }}
-
+            </div>
           </div>
-        </div>
-
-        <div class="fade" id="scroll-to-top">
-          <i class="fa fa-chevron-up"></i>
+          <div class="col-sm-6 col-sm-pull-6 mg-t-xso-lg">
+            {{ .Params.intro.text | markdownify }}
+          </div>
         </div>
       </div>
 
-      {{ partial "footer.html" . }}
+      <!-- Herkunft -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header page-header-with-icon">
+            <i class="fa fa-leaf"></i>
+            <h2>
+              Herkunft
+            </h2>
+          </div>
+
+          <div class="text-boxes">
+            <div class="row">
+              <div class="col-sm-4 col-sm-push-8">
+                <a data-lightbox href="{{ .URL }}{{ .Params.herkunft.image.url_large }}" title="{{ .Params.herkunft.image.caption }}">
+                  <img class="img-responsive center-block" alt="{{ .Params.herkunft.image.caption }}" src="{{ .URL }}{{ .Params.herkunft.image.url }}">
+                  <i class="fa fa-search"></i>
+                </a>
+              </div>
+              <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
+                {{ .Params.herkunft.text | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anbau -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header page-header-with-icon">
+            <i class="fa fa-leaf"></i>
+            <h2>
+              Anbau
+            </h2>
+          </div>
+
+          <div class="text-boxes">
+            <div class="row">
+              <div class="col-sm-4 col-sm-push-8">
+                <a data-lightbox href="{{ .URL }}{{ .Params.anbau.image.url_large }}" title="{{ .Params.anbau.image.caption }}">
+                  <img class="img-responsive center-block" alt="{{ .Params.anbau.image.caption }}" src="{{ .URL }}{{ .Params.anbau.image.url }}">
+                  <i class="fa fa-search"></i>
+                </a>
+              </div>
+              <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
+                {{ .Params.anbau.text | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Geschichte -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header page-header-with-icon">
+            <i class="fa fa-leaf"></i>
+            <h2>
+              Geschichte
+            </h2>
+          </div>
+
+          <div class="text-boxes">
+            {{ .Params.geschichte.content | markdownify }}
+          </div>
+        </div>
+      </div>
+
+      <!-- Verwendung -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header page-header-with-icon">
+            <i class="fa fa-leaf"></i>
+            <h2>
+              Verwendung
+            </h2>
+          </div>
+
+          <div class="text-boxes">
+            <div class="row">
+              <div class="col-sm-4 col-sm-push-8">
+                <a data-lightbox href="{{ .URL }}{{ .Params.verwendung.image.url_large }}" title="{{ .Params.verwendung.image.caption }}">
+                  <img class="img-responsive center-block" alt="{{ .Params.verwendung.image.caption }}" src="{{ .URL }}{{ .Params.verwendung.image.url }}">
+                  <i class="fa fa-search"></i>
+                </a>
+              </div>
+              <div class="col-sm-8 col-sm-pull-4 mg-t-xso-lg">
+                {{ .Params.verwendung.text | markdownify }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quellen -->
+      {{ if isset .Params "quellen" }}
+      <hr>
+
+      <h4>Quellen</h4>
+
+      <ul class="list-unstyled small">
+        {{ range .Params.quellen }}
+        <li>{{ .text | markdownify }}</li>
+        {{ end }}
+      </ul>
+      {{ end }}
+
     </div>
-    {{ partial "body_includes" . }}
-  </body>
-</html>
+  </div>
+
+  <div class="fade" id="scroll-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+</div>
+{{ end }}

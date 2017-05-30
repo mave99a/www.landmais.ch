@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    {{ partial "head.html" . }}
+
+    <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+
+    {{ block "head_includes" . }}{{ end }}
+  </head>
+  <body>
+    <div id="wrapper">
+      {{ block "main" . }}{{ end }}
+      {{ partial "footer.html" . }}
+    </div>
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/plugins/modernizr/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/js/plugins/hover-dropdown/twitter-bootstrap-hover-dropdown.js"></script>
+    <script type="text/javascript" src="/js/plugins/isotope/jquery.isotope.js"></script>
+    <script type="text/javascript" src="/js/plugins/isotope/jquery.isotope.sloppy-masonry.js"></script>
+    <script type="text/javascript" src="/js/plugins/nivo-lightbox/nivo-lightbox.js"></script>
+    <script type="text/javascript" src="/js/bundle.js"></script>
+
+    {{ block "body_includes" . }}{{ end }}
+  </body>
+</html>

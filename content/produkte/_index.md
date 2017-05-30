@@ -5,7 +5,7 @@ image = "griess-orange.jpg"
 
 
 [menu.main]
-  weight = 2
+  weight = 3
 
 [intro]
   lead = '''

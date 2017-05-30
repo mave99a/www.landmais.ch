@@ -1,0 +1,98 @@
+{{ define "title" }}
+{{ .Title }} | Blog | {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+<div id="main" role="main">
+  <div id="main-content-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="title">
+            Blogeintrag
+          </h1>
+          <ol class="breadcrumb">
+            <li>
+              <a href="/">
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/blog/">
+                Blog
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-push-9 col-sm-push-8 col-sm-4 col-md-3">
+          <nav class="sidebar">
+            <button class="btn btn-block btn-contrast sidebar-toggle" data-target=".sidebar-collapse" data-toggle="collapse" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="sidebar-collapse collapse">
+              <div class="box">
+                <h3 class="title">Suchen im Blog</h3>
+
+                <form action="https://google.com/search">
+                  <div class="input-group">
+                    <input type="hidden" name="as_sitesearch" value="www.landmais.ch">
+                    <input class="form-control" placeholder="Suchen..." type="text" name="q" results="0">
+                    <span class="input-group-btn">
+                      <button class="btn btn-contrast" type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-pull-3 col-sm-pull-4 col-sm-8 col-md-9">
+          <div class="text-boxes">
+            <div class="row text-box text-box-title-above text-box-big-image">
+              <div class="col-sm-12">
+                <h2 class="title">{{ .Title }}</h2>
+                {{ partial "blog/meta.html" . }}
+              </div>
+            </div>
+            <div class="row text-box blog-content">
+              <div class="col-sm-12">
+                {{ .Content }}
+              </div>
+            </div>
+          </div>
+
+          <!-- Prev/Next Post -->
+          <hr>
+          <div class="clearfix">
+            {{ if .PrevInSection }}
+            <a href="{{ .PrevInSection.RelPermalink }}" class="blog-more left btn btn-sm btn-light btn-bordered"><i class="fa fa-angle-left"></i>&nbsp;{{ .PrevInSection.Title }}</a> {{ end }} {{ if .NextInSection }}
+            <a href="{{ .NextInSection.RelPermalink }}" class="blog-more right btn btn-sm btn-light btn-bordered"><i class="fa fa-angle-right"></i>{{ .NextInSection.Title }}</a> {{ end }}
+          </div>
+          <!-- End Prev/Next Post -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fade" id="scroll-to-top" style="bottom: 10px;">
+    <i class="fa fa-chevron-up"></i>
+  </div>
+</div>
+
+
+{{ end }}

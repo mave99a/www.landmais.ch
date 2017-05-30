@@ -1,0 +1,318 @@
+{{ define "main" }}
+
+{{ partial "header.html" . }}
+
+<div id="main" role="main">
+
+  <div id="main-content-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="title">
+            {{ .Title }}
+          </h1>
+          <ol class="breadcrumb">
+            <li>
+              <a href="/">
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li class="active">
+              {{ .Title }}
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-content">
+    <div class="container container-md">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="lead text-center">{{ .Params.intro.lead | markdownify }}</p>
+        </div>
+      </div>
+
+
+
+      <div class="row panels">
+        <div class="col-sm-6 panel-item">
+          <div class="panel panel-image">
+            <div class="panel-heading">
+              <img class="img-responsive-sm" alt="Project planning" width="768" height="300" src="oaxacan-koerner.jpg"></div>
+              <div class="panel-body">
+                <h3 class="panel-title">Ziel 1: Erwerbsmässiger Anbau einer grünen Sorte</h3>
+
+                <p>
+                  Wir suchen 25 Personen, die je 80 Franken in dieses landwirtschaftliche Projekt investieren (= Total CHF 2'000). Damit wird der erwerbsmässige Anbau einer grünen Landmaissorte im 2017 finanziert.
+                </p>
+
+                <h4 class="mg-t-lg">Aktueller Stand (Ziel 1)</h3>
+
+                  <div class="progress progress-md mg-t mg-b-xs">
+                    {{ $goal1_percent := div (mul .Params.goal1.backers 100) .Params.goal1.seeking_backers }}
+                    <div class="progress-bar progress-bar-medium" role="progressbar" style="width: {{ $goal1_percent }}%">
+                      {{ $goal1_percent }} %
+                    </div>
+                  </div>
+                  <p>
+                    <strong>CHF {{ mul .Params.goal1.backers .Params.goal1.price_per_backer }}</strong> von CHF  {{ mul .Params.goal1.seeking_backers .Params.goal1.price_per_backer }} finanziert<br>
+                    <strong>{{ .Params.goal1.backers }} Unterstützer</strong> von {{ .Params.goal1.seeking_backers }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 panel-item">
+              <div class="panel panel-image">
+                <div class="panel-heading"><img class="img-responsive-sm" alt="Easy customizable" width="768" height="300" src="bijeli-koerner.jpg"></div>
+                <div class="panel-body">
+                  <h3 class="panel-title">Ziel 2: Erhalt einer weissen, violetten, orangen und grünen Sorte</h3>
+
+                  <p>
+                    Wir suchen weitere 10 Personen, die je 80 Franken investieren. Damit werden die Materialkosten für den Erhalt einer weissen, violetten, orangen und grünen Landmaissorte finanziert.
+                  </p>
+
+                  <h4 class="mg-t-lg">Aktueller Stand (Ziel 2)</h3>
+
+                    <div class="progress progress-md mg-t mg-b-xs">
+                      {{ $goal2_percent := div (mul .Params.goal2.backers 100) .Params.goal2.seeking_backers }}
+                      <div class="progress-bar progress-bar-medium" role="progressbar" style="width: {{ $goal2_percent }}%">
+                        {{ $goal2_percent }} %
+                      </div>
+                    </div>
+                    <p>
+                      <strong>CHF {{ mul .Params.goal2.backers .Params.goal2.price_per_backer }}</strong> von CHF  {{ mul .Params.goal2.seeking_backers .Params.goal2.price_per_backer }} finanziert<br>
+                      <strong>{{ .Params.goal2.backers }} Unterstützer</strong> von {{ .Params.goal2.seeking_backers }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="page-header page-header-with-icon">
+                  <i class="fa fa-flash"></i>
+                  <h2>
+                    Das Projekt
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-8">
+                {{ .Params.project.text | markdownify }}
+              </div>
+
+              <div class="col-sm-4">
+                {{ range .Params.project.images }}
+                <div class="thumbnail">
+                  <img src="{{ .url }}">
+                  <div class="caption">
+                    <p>{{ .caption | markdownify }}</p>
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="page-header page-header-with-icon">
+                  <i class="fa fa-flash"></i>
+                  <h2>
+                    Belohnungen
+                  </h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6">
+                {{ .Params.goodies.text | markdownify }}
+              </div>
+
+              <div class="col-sm-3 mg-b-xs">
+                <div class="thumbnail">
+                  <img src="celebrate.svg" style="max-height: 135px;">
+                  <div class="caption text-center">
+                    <p><em>Einladung zum Mais-Fest im November 2017 auf dem Bauernhof (Belpberg). Wir feiern zusammen die Ernte, lernen über das Züchten von Mais und essen Mais.</em></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumbnail">
+                  <img src="griess-gruen.jpg" style="max-height: 135px;">
+                  <div class="caption text-center">
+                    <p><em>Grünes Polentagriess (1kg aufgeteilt in 4 Säcklein)</em></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="page-header page-header-with-icon no-mg-t">
+                  <i class="fa fa-code-fork"></i>
+                  <h2>
+                    Mitmachen
+                  </h2>
+                </div>
+                <form class="form" id="crowdfunding-form">
+                  <fieldset class="row">
+                    <div class="col-sm-4 mg-b-md">
+                      <div class="lead">So funktioniert die Teilnahme</div>
+                      <ol>
+                        <li>Formular ausfüllen.</li>
+                        <li>Geld einzahlen.</li>
+                        <li>Während dem 2017 erhältst du aktuelle Informationen zum Projektstatus und wirst gegen Ende Jahr eingeladen zum Mais-Fest.</li>
+                      </ol>
+                    </div>
+                    <div class="col-sm-7 col-sm-offset-1">
+                      <div class="form-group">
+                        <label class="control-label" for="input-quantity">Anzahl Pakete</label>
+                        <select class="form-control" id="input-quantity">
+                          <option selected="true">1 Paket (CHF 80)</option>
+                          <option>2 Pakete (CHF 160)</option>
+                          <option>3 Pakete (CHF 240)</option>
+                          <option>4 Pakete (CHF 320)</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Vorname</label>
+                        <input class="form-control" id="input-firstname" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input class="form-control" id="input-lastname" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label>Strasse</label>
+                        <input class="form-control" id="input-street" placeholder="" type="text">
+                        <!-- <p class="help-block">
+                        <small class="text-muted">Strasse, Nr., PLZ und Ort</small> -->
+                      </p>
+                    </div>
+                    <div class="form-group">
+                      <label>PLZ, Ort</label>
+                      <input class="form-control" id="input-city" placeholder="" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label>E-Mail-Adresse</label>
+                      <input class="form-control" id="input-email" placeholder="" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label>Bemerkungen</label>
+                      <input class="form-control" id="input-comments" placeholder="" type="text">
+                    </div>
+                    <input type="text" name="_gotcha" style="display:none">
+                    <div id="error-message" class="text-xs-center" style="display:none">
+                      <p class="text-danger"><i class="fa fa-remove fa-fixed-width"></i> Bitte überprüfe deine Angaben. Sie scheinen noch nicht vollständig zu sein.</p>
+                    </div>
+                    <button id="submit-button" type="submit" class="btn btn-contrast btn-lg mg-t-sm mg-b">
+                      <i class="fa fa-paper-plane-o"></i>
+                      abschicken
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+              <div id="success-message" class="text-xs-center" style="display:none">
+                <div class="row">
+                  <div class="col-sm-4 mg-t-lg hidden-xs">
+                    <img class="img-responsive" src="thumbs_up.svg" style="max-width: 160px;">
+                  </div>
+                  <div class="col-sm-8">
+                    <h1>Vielen Dank für deine Unterstützung</h1>
+
+                    <h2>Zahlungsinformationen</h2>
+                    <p>Bitte überweise den Betrag von CHF 80 (pro bestelltem Paket) auf folgendes Bankkonto:</p>
+                    <p>
+                      Kontonummer: <strong>CH49 0630 0503 7050 7455 6</strong><br>
+                      Kontoinhaber: <strong>Verein Landmais in Belp, Valiant Bank</strong>
+                    </p>
+
+                    <p><em>Hinweis: Du wirst in den nächsten Stunden von uns diese Angaben zusätzlich per Mail erhalten.</em></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="alert alert-success mg-t-lg">
+                  <strong>Bei Fragen</strong>
+                  darfst du uns gerne ein Mail an <a class="alert-link" href="mailto:info@landmais.ch">info@landmais.ch</a> schicken.
+                </div>
+              <p><em></em></p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="fade" id="scroll-to-top">
+          <i class="fa fa-chevron-up"></i>
+        </div>
+      </div>
+</div>
+{{ end }}
+
+{{ define "body_includes" }}
+<script>
+$("#crowdfunding-form").submit(function(event) {
+  // Remove all previous error indicators.
+  $('.has-error').removeClass('has-error');
+  $('#error-message').hide();
+
+  var hasError = false;
+
+  var quantity = $('#input-quantity').val();
+
+  var firstname = $('#input-firstname').val();
+  if (firstname.trim().length == 0) {
+    $('#input-firstname').parent('.form-group').addClass('has-error');
+    hasError = true;
+  }
+
+  var lastname = $('#input-lastname').val();
+  if (lastname.trim().length == 0) {
+    $('#input-lastname').parent('.form-group').addClass('has-error');
+    hasError = true;
+  }
+
+  var street = $('#input-street').val();
+  var city = $('#input-city').val();
+
+  var email = $('#input-email').val();
+  if (email.trim().length == 0) {
+    $('#input-email').parent('.form-group').addClass('has-error');
+    hasError = true;
+  }
+
+  var comments = $('#input-comments').val();
+  if (!hasError) {
+    var target = ('info' + '@' + 'landmais.ch');
+    $.ajax({
+      url: "https://formspree.io/" + target,
+      method: "POST",
+      data: {
+        "Anzahl Pakete": quantity,
+        "Vorname": firstname,
+        "Nachname": lastname,
+        "Strasse": street,
+        "PLZ, Ort": city,
+        "E-Mail": email,
+        "Kommentare": comments
+      },
+      dataType: "json"
+    });
+
+    $('#crowdfunding-form').hide();
+    $('#success-message').show();
+  } else {
+    $('#error-message').show();
+  }
+
+  event.preventDefault();
+});
+</script>
+{{ end }}

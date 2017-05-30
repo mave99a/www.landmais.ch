@@ -3,7 +3,7 @@ title = "Warum Landmais"
 description = "Warum Landmais"
 
 [menu.main]
-  weight = 3
+  weight = 4
 
 [[argumente]]
   icon = "fa-pagelines"
