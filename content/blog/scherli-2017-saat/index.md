@@ -4,6 +4,9 @@ date = "2017-04-29"
 description = "Ende April war das Wetter nicht an vielen Tagen schön. Deshalb sind wir froh, dass es kurz schön blieb für die Bodenbearbeitung und die Saat der meisten Sorten."
 image = "philipp-meyer-saat.jpg"
 author = "Philipp Meyer"
+aliases = [
+  "/blog/saat-2017-scherli/"
+]
 +++
 
 ![Philipp Meyer Saat](philipp-meyer-saat.jpg)
