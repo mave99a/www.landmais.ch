@@ -55,9 +55,13 @@
 
         <div class="col-md-pull-3 col-sm-pull-4 col-sm-8 col-md-9">
           <div class="text-boxes">
-            {{ range (.Paginator 7).Pages }}
-              {{ partial "blog/summary.html" . }}
-            {{ end }}
+            <div class="row text-box text-box-title-above">
+              {{ range (.Paginator 7).Pages }}
+                <div class="col-sm-12 mg-b-lg">
+                  {{ partial "blog/summary.html" . }}
+                </div>
+              {{ end }}
+            </div>
           </div>
 
           <div class="text-center">

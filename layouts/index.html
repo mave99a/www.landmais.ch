@@ -63,6 +63,32 @@
           </a>
         </div>
       </div>
+
+
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header page-header-with-icon">
+            <i class="fa fa-bullhorn"></i>
+            <h2>
+              Blog
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-boxes">
+        <div class="row text-box text-box-title-above">
+          {{ range first 4 (where .Site.RegularPages "Section" "blog") }}
+          <div class="col-sm-6 mg-b-lg">
+            {{ partial "blog/summary.html" . }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a class="btn btn-contrast no-mg-b" href="/blog/">Weitere Blogeinträge</a>
+      </div>
     </div>
   </div>
   <div class="fade" id="scroll-to-top">
