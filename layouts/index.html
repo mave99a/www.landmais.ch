@@ -77,13 +77,13 @@
       </div>
 
       <div class="text-boxes">
+        {{ range first 4 (where .Site.RegularPages "Section" "blog") }}
         <div class="row text-box text-box-title-above">
-          {{ range first 4 (where .Site.RegularPages "Section" "blog") }}
-          <div class="col-sm-6 mg-b-lg">
+          <div class="col-sm-offset-2 col-sm-8 mg-b-lg">
             {{ partial "blog/summary.html" . }}
           </div>
-          {{ end }}
         </div>
+        {{ end }}
       </div>
 
       <div class="text-center">
