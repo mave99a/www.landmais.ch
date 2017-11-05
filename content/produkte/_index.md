@@ -1,5 +1,5 @@
 +++
-title = "Produkte"
+title = "Mais bestellen"
 description = "Produkte von Landmais.ch"
 image = "griess-orange.jpg"
 
@@ -9,11 +9,23 @@ image = "griess-orange.jpg"
 
 [intro]
   lead = '''
-Produkte, die bei Landmais.ch bezogen werden können
+Aktuell: Maisernte 2017 bestellen
 '''
   text = '''
-Die nachfolgenden Produkte werden von Landmais.ch hergestellt und sind zur Degustation im kleinen Umfang erhältlich. Sind Sie interessiert daran? Dann nehmen Sie Kontakt auf unter [info@landmais.ch](mailto:info@landmais.ch). Es hat solange es hat!
+Im Oktober haben wir den grünen Mais der Sorte Oaxacan Green geerntet. Nach der Trocknung warten nun 2 volle Baloxen mit Maiskörnern darauf, von «gwundrigen» Feinschmeckern gekauft und gegessen zu werden.  Unter [info@landmais.ch](mailto:info@landmais.ch) könnt ihr grünes Maisgries oder Maismehl für CHF 16.00/kg bestellen.
+ 
+Wer mithelfen will, Griess und Mehl von anderen farbigen Maissorten auszuprobieren, kann sich ebenfalls unter [info@landmais.ch](mailto:info@landmais.ch) melden. Wir sind daran interessiert, herauszufinden, welche Farben euch bei Polenta den Appetit anregen und welche allenfalls weniger.
 '''
+
+[[produkte]]
+image = "griess-gruen.jpg"
+image_large = "griess-gruen-large.jpg"
+caption = "Grünes Polentagriess der Sorte [Oaxacan Green](/maissorten/oaxacan-green/)"
+
+[[produkte]]
+image = "mehl-weiss.jpg"
+image_large = "mehl-weiss-large.jpg"
+caption = "Weisses Tortillamehl der Sorte [Cudu](/maissorten/cudu/)"
 
 [[produkte]]
   image = "griess-orange.jpg"
@@ -24,16 +36,6 @@ Die nachfolgenden Produkte werden von Landmais.ch hergestellt und sind zur Degus
   image = "mehl-morado-nixtamalisation.jpg"
   image_large = "mehl-morado-nixtamalisation-large.jpg"
   caption = "Violettes Tortillamehl der Sorte [Cuzco Morado](/maissorten/cuzco-morado/)"
-
-[[produkte]]
-  image = "griess-gruen.jpg"
-  image_large = "griess-gruen-large.jpg"
-  caption = "Grünes Polentagriess der Sorte [Oaxacan Green](/maissorten/oaxacan-green/)"
-
-[[produkte]]
-  image = "mehl-weiss.jpg"
-  image_large = "mehl-weiss-large.jpg"
-  caption = "Weisses Tortillamehl der Sorte [Cudu](/maissorten/cudu/)"
 
 [[produkte]]
   image = "griess-weiss.jpg"
