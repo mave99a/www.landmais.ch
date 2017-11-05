@@ -37,7 +37,7 @@ Im Frühling entwickeln sich einige Sorten besser als Hybridmaissorten.
   icon = "fa-refresh"
   titel = "Landmais ist nachbaubar"
   text = '''
-Landmaissorten sind als Populationssorten natürlich vermehrbar und daher jahrelang anbaubar. Hybridmais dagegen ist nicht samenfest und somit sind dessen Sorteneigenschaften nur 1 Generation lang stabil. Es braucht jedes Jahr neues Saatgut.
+Landmaissorten sind als Populationssorten natürlich vermehrbar und daher jahrelang anbaubar. Bei Hybridmais dagegen sind die Sorteneigenschaften nur 1 Generation lang stabil. Es braucht jedes Jahr neues Saatgut.
 '''
 
 [[argumente]]
@@ -45,13 +45,6 @@ Landmaissorten sind als Populationssorten natürlich vermehrbar und daher jahrel
   titel = "Landmais mit höherer Ertragssicherheit"
   text = '''
 Gegenüber Hybridmais haben Landmaissorten eine höhere Ertragssicherheit, da jede Pflanze genetisch unterschiedlich ist und somit nicht jede Pflanze gleich empfindlich auf eine Krankheit oder auf Stress reagiert.
-'''
-
-[[argumente]]
-  icon = "fa-signal"
-  titel = "Landmais mit linearem Zuchtfortschritt"
-  text = '''
-Züchtungsfortschritte nehmen bei Populationssorten linear und jährlich zu, während eine neue Hybridsorte mit besserem Ertrag erst nach ca. 10 Jahren Züchtungsaufwand gefunden werden kann.
 '''
 
 [problematik]
