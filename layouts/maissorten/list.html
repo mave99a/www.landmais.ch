@@ -42,13 +42,7 @@
             <li class="active"><a data-filter="*" href="#">Alle</a></li>
 
             {{ range $key, $taxonomy := .Site.Taxonomies.tags }}
-              {{/* Find the friendly (non-urlized) tag name. */}}
-              {{ $page := index $taxonomy.Pages 0 }}
-              {{ range $friendly := $page.Params.tags }}
-                {{ if eq $key ($friendly | urlize) }}
-                  <li><a data-filter=".sorten-filter-{{ $key }}" href="#">{{ $friendly }}</a></li>
-                {{ end }}
-              {{ end }}
+              <li><a data-filter=".sorten-filter-{{ $key | urlize }}" href="#">{{ $key }}</a></li>
             {{ end }}
           </ul>
         </div>
