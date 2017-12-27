@@ -1,7 +1,8 @@
 +++
 title = "Bijeli Crveni"
 description = "Eine sehr ertragreiche Sorte"
-weight = 3
+weight = 0
+draft = true
 tags = [ "Zahnmais" ]
 image = "bijeli-1.jpg"
 
@@ -36,8 +37,8 @@ Das bei *Landmais.ch* angebaute Saatgut wurde im Jahr 2013 über [Anhalonium.com
 Über die Herkunft dieses Zahnmais ist lediglich bekannt, dass Anhalonium das Originalsaatgut vom Institut für Pflanzengenetik und Kulturpflanzenforschung (IPK) in Gatersleben bezogen hatte. Seit 2009 wird die Sorte bei Anhalonium angebaut.
 '''
   [herkunft.image]
-    url = "bijeli-koerner.png"
-    url_large = "bijeli-koerner-large.png"
+    url = "bijeli-koerner.jpg"
+    url_large = "bijeli-koerner-large.jpg"
     caption = "Körner Makro"
 
 

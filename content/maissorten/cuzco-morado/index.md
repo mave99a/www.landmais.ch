@@ -1,7 +1,7 @@
 +++
 title = "Cuzco Morado"
 description = "Eine südamerikanische Sorte aus den Anden"
-weight = 2
+weight = 3
 tags = [ "Weichmais" ]
 image = "morado-2012.jpg"
 

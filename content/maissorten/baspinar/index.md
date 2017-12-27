@@ -1,7 +1,8 @@
 +++
 title = "Baspinar"
 description = "Ertragreicher Popcornmais"
-weight = 7
+weight = 0
+draft = true
 tags = [ "Popcornmais" ]
 image = "baspinar-rot.jpg"
 

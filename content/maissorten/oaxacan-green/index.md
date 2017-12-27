@@ -35,6 +35,12 @@ Die grün gefärbten Kolben können kurz und breit oder lang und etwas schmaler 
     url_large = "oaxacan-green-3-large.jpg"
     caption = "Oaxacan Green 3"
 
+  [[intro.gallery]]
+    url = "oaxacan-green-4.jpg"
+    url_small = "oaxacan-green-4-small.jpg"
+    url_large = "oaxacan-green-4-large.jpg"
+    caption = "Oaxacan Green 4"
+
 
 [herkunft]
   text = '''
@@ -73,8 +79,8 @@ Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie maximal 14% Wa
 Die Zapoteken verwendeten das grüne Mehl für die Herstellung von Tamales (Tortillas mit einer Füllung, die mit Pflanzenblättern umwickelt gekocht werden.
 '''
   [verwendung.image]
-    url = "oaxacan-koernerquerschnitt.jpg"
-    url_large = "oaxacan-koernerquerschnitt-large.jpg"
+    url = "koerner-querschnitt.jpg"
+    url_large = "koerner-querschnitt-large.jpg"
     caption = "Oaxacan Green Körnerquerschnitt"
 
 

@@ -1,7 +1,7 @@
 +++
 title = "Blanc de Bresse"
 description = "Traditionelle Sorte aus der Bresse (F)"
-weight = 9
+weight = 8
 tags = [ "Hartmais" ]
 image = "blanc-de-bresse.jpg"
 

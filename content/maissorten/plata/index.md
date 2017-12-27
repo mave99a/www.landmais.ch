@@ -1,7 +1,7 @@
 +++
 title = "Plata"
 description = "Hartmaissorte aus Argentinien"
-weight = 5
+weight = 7
 tags = [ "Hartmais" ]
 image = "plata-orange.jpg"
 

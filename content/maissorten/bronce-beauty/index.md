@@ -1,7 +1,8 @@
 +++
 title = "Bronce Beauty"
 description = "Alte Indianersorte aus den USA"
-weight = 6
+weight = 0
+draft = true
 tags = [ "Hartmais" ]
 image = "bronce-beauty-1.jpg"
 

@@ -74,6 +74,7 @@
       </div>
 
       <!-- Herkunft -->
+      {{ if .Params.herkunft }}
       <div class="row">
         <div class="col-sm-12">
           <div class="page-header page-header-with-icon">
@@ -98,8 +99,10 @@
           </div>
         </div>
       </div>
+      {{ end }}
 
       <!-- Anbau -->
+      {{ if .Params.anbau }}
       <div class="row">
         <div class="col-sm-12">
           <div class="page-header page-header-with-icon">
@@ -124,8 +127,10 @@
           </div>
         </div>
       </div>
+      {{ end }}
 
       <!-- Geschichte -->
+      {{ if .Params.geschichte }}
       <div class="row">
         <div class="col-sm-12">
           <div class="page-header page-header-with-icon">
@@ -140,8 +145,28 @@
           </div>
         </div>
       </div>
+      {{ end }}
+      
+      <!-- Entwicklung -->
+      {{ if .Params.entwicklung }}
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header page-header-with-icon">
+            <i class="fa fa-leaf"></i>
+            <h2>
+              Entwicklung
+            </h2>
+          </div>
+
+          <div class="text-boxes">
+            {{ .Params.entwicklung.text | markdownify }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
 
       <!-- Verwendung -->
+      {{ if .Params.verwendung }}
       <div class="row">
         <div class="col-sm-12">
           <div class="page-header page-header-with-icon">
@@ -166,6 +191,7 @@
           </div>
         </div>
       </div>
+      {{ end }}
 
       <!-- Quellen -->
       {{ if isset .Params "quellen" }}

@@ -1,10 +1,9 @@
 +++
 title = "Oranger Tessinermais"
 description = "Problemlos wachsend und ertragreich"
-weight = 4
+weight = 6
 tags = [ "Hartmais" ]
 image = "oranger-tessinermais-1.jpg"
-draft = true
 
 [intro]
   text = '''
