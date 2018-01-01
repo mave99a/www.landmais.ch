@@ -12,7 +12,7 @@ image = "griess-orange.jpg"
 Aktuell: Maisernte 2017 bestellen
 '''
   text = '''
-Im Oktober haben wir den grünen Mais der Sorte Oaxacan Green geerntet. Nach der Trocknung warten nun 2 volle Baloxen mit Maiskörnern darauf, von «gwundrigen» Feinschmeckern gekauft und gegessen zu werden.  Unter [info@landmais.ch](mailto:info@landmais.ch) könnt ihr grünes Maisgries oder Maismehl für CHF 16.00/kg bestellen.
+Im Oktober haben wir den grünen Mais der Sorte Oaxacan Green geerntet. Nach der Trocknung warten nun 2 volle Baloxen mit Maiskörnern darauf, von «gwundrigen» Feinschmeckern gekauft und gegessen zu werden.  Unter [info@landmais.ch](mailto:info@landmais.ch) könnt ihr grünes Maisgriess oder Maismehl für CHF 16.00/kg bestellen.
  
 Wer mithelfen will, Griess und Mehl von anderen farbigen Maissorten auszuprobieren, kann sich ebenfalls unter [info@landmais.ch](mailto:info@landmais.ch) melden. Wir sind daran interessiert, herauszufinden, welche Farben euch bei Polenta den Appetit anregen und welche allenfalls weniger.
 
@@ -43,11 +43,6 @@ caption = "Weisses Tortillamehl der Sorte [Cudu](/maissorten/cudu/)"
   image = "griess-weiss.jpg"
   image_large = "griess-weiss-large.jpg"
   caption = "Weisses Polentagriess der Sorte [Blanc de Bresse](/maissorten/blanc-de-bresse/)"
-
-[[produkte]]
-  image = "griess-braun.jpg"
-  image_large = "griess-braun-large.jpg"
-  caption = "Braunes Polentagriess der Sorte [Bronce Beauty](/maissorten/bronce-beauty/)"
 
 [[produkte]]
   image = "griess-rot.jpg"

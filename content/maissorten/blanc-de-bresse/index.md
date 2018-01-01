@@ -1,7 +1,7 @@
 +++
 title = "Blanc de Bresse"
 description = "Traditionelle Sorte aus der Bresse (F)"
-weight = 8
+weight = 10
 tags = [ "Hartmais" ]
 image = "blanc-de-bresse.jpg"
 
@@ -56,7 +56,7 @@ Ebenfalls möglich ist der Anbau zusammen mit Kürbis. Hier müssen die Pflanzab
 
 [verwendung]
   text = '''
-Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie nur noch maximal 14% Wasser enthalten (86% TS). Die Körner können grob gemahlen zu Bramatagries verarbeitet werden. Dabei entsteht kaum Mehl und dafür ein weisses, sehr mild schmeckendes Polentagries.
+Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie nur noch maximal 14% Wasser enthalten (86% TS). Die Körner können grob gemahlen zu Bramatagriess verarbeitet werden. Dabei entsteht kaum Mehl und dafür ein weisses, sehr mild schmeckendes Polentagriess.
 
 Ist für einmal zu viel Griess vorhanden, dann eignet sich dessen Griess eingeweicht auch als Zugabe für ein schmackhaftes Brot. Der Maisanteil sollte dabei nicht höher als ein Drittel sein, damit das Brot noch schön aufgeht.
 

@@ -60,9 +60,9 @@ Unter folgendem Link sind [weitere Infos zu Jamero](/maissorten/jamero/).
 
 [verwendung]
   text = '''
-Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie maximal 14% Wasser enthalten (86% TS). Die aussen violett bis moradoartig und innen weiss oder gelb gefärbten Körner können grob gemahlen zu Bramatagries verarbeitet werden.
+Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie maximal 14% Wasser enthalten (86% TS). Die aussen violett bis moradoartig und innen weiss oder gelb gefärbten Körner können grob gemahlen zu Bramatagriess verarbeitet werden.
   
-Mit einem Sieb kann der kleine Mehlanteil rausgesiebt werden. Ein dunkelviolettes Polentagries ist nicht nur gesund, sondern sieht auch gut aus. 
+Mit einem Sieb kann der kleine Mehlanteil rausgesiebt werden. Ein dunkelviolettes Polentagriess ist nicht nur gesund, sondern sieht auch gut aus. 
 '''
   [verwendung.image]
     url = "koerner-querschnitt.jpg"

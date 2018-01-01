@@ -34,7 +34,7 @@ Die Kolben enthalten 8-10 Reihen mit grossen Körner, die lila bis violett gefä
   text = '''
 Dieser Hartmais wurde im 2013 als Tama Flint von einer Genbank der ARS USDA in Iowa bezogen und 2014 erstmals angebaut. Unsere Selektion zeigt keinerlei Zahnmaisförmige Körner mehr. 
 
-Die Sorte stammt von den Sauk und Fox Indianern (M	esquakie) von Iowa und wurde im 1989 von Landwirten an die USDA abgegeben. Die Sorte wurde bis dahin offen abblühend angebaut. 
+Die Sorte stammt von den Sauk und Fox Indianern (Mesquakie) von Iowa und wurde im 1989 von Landwirten an die USDA abgegeben. Die Sorte wurde bis dahin offen abblühend angebaut. 
 
 '''
   [herkunft.image]

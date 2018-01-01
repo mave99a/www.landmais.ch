@@ -1,7 +1,7 @@
 +++
 title = "Plata"
 description = "Hartmaissorte aus Argentinien"
-weight = 7
+weight = 9
 tags = [ "Hartmais" ]
 image = "plata-orange.jpg"
 
@@ -68,7 +68,7 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
   text = '''
 Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie maximal 14% Wasser enthalten (86% TS). Die Körner der Sorte Plata brauchen eine etwas längere Trocknungszeit als andere Sorten.
 
-Die Körner können grob gemahlen zu Bramatagries verarbeitet werden. Dabei entsteht kaum Mehl und dafür ein oranges, sehr schön anzusehendes Polentagries.
+Die Körner können grob gemahlen zu Bramatagriess verarbeitet werden. Dabei entsteht kaum Mehl und dafür ein oranges, sehr schön anzusehendes Polentagries.
 
 Ist für einmal zu viel Griess vorhanden, dann eignet sich dieses eingeweicht auch als Zugabe für ein schmackhaftes Brot. Der Maisanteil sollte dabei nicht höher als ein Drittel sein, damit das Brot noch schön aufgeht.
 '''

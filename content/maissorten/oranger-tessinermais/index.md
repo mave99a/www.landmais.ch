@@ -1,7 +1,7 @@
 +++
 title = "Oranger Tessinermais"
 description = "Problemlos wachsend und ertragreich"
-weight = 6
+weight = 8
 tags = [ "Hartmais" ]
 image = "oranger-tessinermais-1.jpg"
 
@@ -62,7 +62,7 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
 
 [verwendung]
   text = '''
-Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie maximal 14% Wasser enthalten (86% TS). Die grünen Körner können grob gemahlen zu Bramatagries verarbeitet werden. Mit einem Sieb kann der Mehlanteil noch etwas reduziert werden. Ein grünes Polentagries ist nicht nur gesund, sondern sieht auch gut aus. Propieren Sie's aus!
+Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie maximal 14% Wasser enthalten (86% TS). Die grünen Körner können grob gemahlen zu Bramatagriess verarbeitet werden. Mit einem Sieb kann der Mehlanteil noch etwas reduziert werden. Ein grünes Polentagriess ist nicht nur gesund, sondern sieht auch gut aus. Propieren Sie's aus!
 
 Die Zapoteken verwendeten das grüne Mehl für die Herstellung von Tamales (Tortillas mit einer Füllung, die mit Pflanzenblättern umwickelt gekocht werden.
 '''

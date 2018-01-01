@@ -67,7 +67,7 @@ Das Saatgut stammt vom [Indianervolk der Winnebago in Wisconsin (USA)](http://ww
 
 [verwendung]
   text = '''
-Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie nur noch maximal 14% Wasser enthalten (86% TS). Die Körner können grob gemahlen zu Bramatagries verarbeitet werden. Mit einem Sieb kann der Mehlanteil noch etwas reduziert werden. Dabei entsteht ein beige-braunes Polentagries.
+Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie nur noch maximal 14% Wasser enthalten (86% TS). Die Körner können grob gemahlen zu Bramatagriess verarbeitet werden. Mit einem Sieb kann der Mehlanteil noch etwas reduziert werden. Dabei entsteht ein beige-braunes Polentagriess.
 
 Ist für einmal zu viel Griess vorhanden, dann eignet sich dessen Griess eingeweicht auch als Zugabe für ein schmackhaftes Brot. Der Maisanteil sollte dabei nicht höher als ein Drittel sein, damit das Brot noch schön aufgeht.
 '''

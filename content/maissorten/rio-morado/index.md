@@ -15,7 +15,7 @@ Die neu entstandene Sorte **Rio Morado** wächst und blüht noch uneinheitlich. 
 
 Neben der früheren Reife werden von der Sorte [Rio Lucio](/maissorten/rio-lucio/) auch vereinzelt Mehrfachkolben vererbt, die ausselektiert werden müssen. Daneben stammt jedoch auch die Genetik für grosse und lange Kolben, mit eingebuchteten Körnern von der Sorte [Rio Lucio](/maissorten/rio-lucio/). Auch hat die Tageslänge nicht mehr entscheidenden Einfluss auf die Blühinduktion. 
 
-Die bei [Cuzco Morado](/maissorten/cuzco-morado/) hohe Produktion an Biomasse kann auch bei Rio Morado beobachtet werden, obwohl die Pflanzen etwas weniger hoch wachsen und dünnere Stängel haben. Auch die Anpassung an kühle Witterung im Frühling ist weiterhin gut. Die Vererbung der dunkelvioletten bis schwarzen Kolbenfarbe scheint nicht nur mit einem Gen vererbt zu werden. Daher finden sich viele Farbabstufungen von dunkelrot bis fast schwarz. 
+Die bei [Cuzco Morado](/maissorten/cuzco-morado/) hohe Produktion an Biomasse kann auch bei Rio Morado beobachtet werden, obwohl die Pflanzen etwas weniger hoch wachsen und dünnere Stängel haben. Auch die Anpassung an kühle Witterung im Frühling ist weiterhin gut. Die Vererbung der dunkelvioletten bis schwarzen Kolbenfarbe scheint nicht nur mit einem Gen vererbt zu werden. Daher finden sich viele Farbabstufungen von purpurrot bis fast schwarz. 
 
 '''
   [[intro.gallery]]

@@ -1,7 +1,7 @@
 +++
 title = "Jamero"
 description = "Kreuzung von Japonica"
-weight = 9
+weight = 7
 tags = [ "Ziermais" ]
 image = "jamero-1.jpg"
 
@@ -45,5 +45,11 @@ Wir selektieren Jamero momentan auf Frühreife und Ertragspotenzial.
     url_small = "jamero-5-small.jpg"
     url_large = "jamero-5-large.jpg"
     caption = "Jamero 5"
+    
+  [[intro.gallery]]
+    url = "koerner-querschnitt.jpg"
+    url_small = "koerner-querschnitt-small.jpg"
+    url_large = "koerner-querschnitt-large.jpg"
+    caption = "Jamero Körnerquerschnitt"
 
 +++
