@@ -62,9 +62,9 @@ Ebenfalls gut möglich ist der Anbau zusammen mit Stangenbohnen und/oder Kürbis
 
 [verwendung]
   text = '''
-Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie maximal 14% Wasser enthalten (86% TS). Die grünen Körner können grob gemahlen zu Bramatagriess verarbeitet werden. Mit einem Sieb kann der Mehlanteil noch etwas reduziert werden. Ein grünes Polentagriess ist nicht nur gesund, sondern sieht auch gut aus. Propieren Sie's aus!
+  Die Kolben müssen nach der Ernte noch getrocknet werden, bis sie nur noch maximal 14% Wasser enthalten (86% TS). Die Körner können grob gemahlen zu Bramatagries verarbeitet werden. Mit einem Sieb kann der Mehlanteil noch etwas reduziert werden. Dabei entsteht ein orange-rotes Polentagriess.
 
-Die Zapoteken verwendeten das grüne Mehl für die Herstellung von Tamales (Tortillas mit einer Füllung, die mit Pflanzenblättern umwickelt gekocht werden.
+  Ist für einmal zu viel Griess vorhanden, dann eignet sich dessen Griess eingeweicht auch als Zugabe für ein schmackhaftes Brot. Der Maisanteil sollte dabei nicht höher als ein Drittel sein, damit das Brot noch schön aufgeht.
 '''
   [verwendung.image]
     url = "oranger-tessinermais-koernerquerschnitt.jpg"
